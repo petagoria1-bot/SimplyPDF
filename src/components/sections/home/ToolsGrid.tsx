@@ -17,10 +17,10 @@ export const ToolsGrid = () => {
       <div className="relative z-10 container mx-auto px-4">
         <div className="scroll-reveal mb-16 text-center">
           <div className="mb-6 inline-block rounded-full bg-gray-100 px-4 py-1.5 text-sm font-bold tracking-wider text-black uppercase">
-            All-In-One Solution
+            UNE SUITE COMPLÈTE
           </div>
           <h2 className="mb-6 text-4xl font-black tracking-tight md:text-6xl">
-            Powerful <span className="text-gray-400">PDF Tools</span>
+            Tous les <span className="text-blue-500">outils PDF</span>
           </h2>
           <p className="section-subtitle mx-auto text-xl font-medium italic">
             Everything you need to work with PDF files, completely free and 100%
@@ -52,7 +52,7 @@ export const ToolsGrid = () => {
                 {tool.description}
               </p>
               <div className="mt-auto flex items-center pt-6 text-sm font-black tracking-widest text-black/20 uppercase transition-colors group-hover:text-black">
-                Open Tool{" "}
+                Ouvrir l’outil{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
               </div>
             </Link>
@@ -77,7 +77,7 @@ export const ToolsGrid = () => {
                   {tool.description}
                 </p>
                 <div className="mt-auto flex items-center pt-6 text-xs font-black tracking-widest text-black/10 uppercase transition-colors group-hover:text-black">
-                  Open Tool{" "}
+                  Ouvrir l’outil{" "}
                   <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                 </div>
               </Link>
@@ -91,7 +91,7 @@ export const ToolsGrid = () => {
               onClick={() => setShowAll(!showAll)}
               className="group inline-flex items-center gap-2 rounded-full bg-black px-10 py-5 text-lg font-bold text-white shadow-2xl transition-all hover:scale-105 active:scale-95"
             >
-              {showAll ? "Show Less Tools" : "Explore All Tools"}
+              {showAll ? "Réduire la liste" : "Voir tous les outils"}
               <ChevronDown
                 className={`h-5 w-5 transition-transform duration-500 ${showAll ? "rotate-180" : ""}`}
               />
