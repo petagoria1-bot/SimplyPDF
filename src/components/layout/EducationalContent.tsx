@@ -35,7 +35,7 @@ export function EducationalContent({
                 key={i}
                 className="relative rounded-2xl border border-gray-100 bg-white p-6 shadow-sm"
               >
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-black font-bold text-white">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#1268f4] font-bold text-white">
                   {i + 1}
                 </div>
                 <p className="leading-relaxed font-medium text-gray-600">
@@ -88,7 +88,7 @@ export function EducationalContent({
           className="mx-auto max-w-3xl pb-10"
         >
           <h2 className="mb-10 text-center text-3xl font-bold">
-            Frequently Asked Questions
+            Questions fréquentes
           </h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
