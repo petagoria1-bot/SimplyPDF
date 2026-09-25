@@ -4,12 +4,12 @@ export const CTA = () => {
   return (
     <section className="py-24 md:py-32">
       <div className="container mx-auto px-4">
-        <div className="scroll-reveal-scale relative mx-auto max-w-4xl overflow-hidden rounded-[3rem] bg-gray-50 p-12 text-center md:p-20">
+        <div className="scroll-reveal-scale relative mx-auto max-w-4xl overflow-hidden rounded-[2rem] border border-blue-100 bg-gradient-to-br from-[#f5faff] to-white p-10 shadow-[0_24px_60px_rgba(18,104,244,.08)] text-center md:p-20">
           <div className="grid-pattern absolute inset-0 opacity-50" />
-          <div className="absolute top-0 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gray-200 blur-3xl" />
+          <div className="absolute top-0 left-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-100 blur-3xl" />
 
           <div className="relative z-10">
-            <h2 className="mb-4 text-3xl font-black tracking-tight md:text-5xl">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-[#07101f] md:text-5xl">
               Vous avez besoin d’un outil spécifique ?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg font-medium text-gray-500">
