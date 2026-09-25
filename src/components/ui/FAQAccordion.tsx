@@ -21,7 +21,7 @@ export function FAQAccordion({ item, isOpen, onToggle }: FAQAccordionProps) {
         onClick={onToggle}
         className="group flex w-full items-start justify-between gap-4 py-5 text-left"
       >
-        <span className="pr-4 font-medium transition-colors group-hover:text-black">
+        <span className="pr-4 font-medium transition-colors group-hover:text-[#1268f4]">
           {item.question}
         </span>
         <ChevronDown
