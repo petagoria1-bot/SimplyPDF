@@ -34,7 +34,7 @@ export function PDFPreviewModal({
   images,
   currentPage,
   onPageChange,
-  title = "PDF Preview",
+  title = "Aperçu du PDF",
   rotation = 0,
   watermark,
   onDownload,
@@ -123,7 +123,7 @@ export function PDFPreviewModal({
             <div className="hidden sm:block">
               <h3 className="text-lg font-bold text-white">{title}</h3>
               <p className="text-xs text-white/50">
-                Page {page + 1} of {images.length}
+                Page {page + 1} sur {images.length}
               </p>
             </div>
           </div>
@@ -155,7 +155,7 @@ export function PDFPreviewModal({
                 className="hidden items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-bold text-black shadow-xl transition-all hover:bg-gray-200 sm:flex"
               >
                 <Download className="h-4 w-4" />
-                Download Result
+                Télécharger le résultat
               </button>
             )}
           </div>
