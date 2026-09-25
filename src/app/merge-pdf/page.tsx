@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "Join PDF",
     "Free PDF Merger",
     "Merge PDF Online",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Merge PDF Online | #1 Free PDF Merger",
     description:
       "Combine multiple PDFs into one document easily. Fast, free, and secure.",
-    url: "https://simplypdf.vercel.app/merge-pdf",
+    url: "https://hexaos.fr/merge-pdf",
   },
 };
 
