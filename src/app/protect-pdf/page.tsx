@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "PDF Password",
     "Secure PDF",
     "Free PDF Locker",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Protect PDF with Password | #1 Free PDF Security Tool",
     description:
       "Secure your PDF files with advanced encryption. Free and private.",
-    url: "https://simplypdf.vercel.app/protect-pdf",
+    url: "https://hexaos.fr/protect-pdf",
   },
 };
 
