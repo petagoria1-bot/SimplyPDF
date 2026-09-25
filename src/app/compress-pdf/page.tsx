@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "Shrink PDF",
     "Small PDF",
     "Free Online Compressor",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Compress PDF Online | #1 Free PDF Compressor",
     description:
       "Reduce the size of your PDFs while maintaining top quality. Free and secure.",
-    url: "https://simplypdf.vercel.app/compress-pdf",
+    url: "https://hexaos.fr/compress-pdf",
   },
 };
 
