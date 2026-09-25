@@ -88,7 +88,9 @@ body {
 @layer components {
   /* Buttons */
   .btn-primary {
-    @apply relative overflow-hidden rounded-full px-8 py-3 font-semibold text-white transition-all duration-500 hover:scale-105 active:scale-95;\n    background: linear-gradient(135deg, var(--hexaos-cyan), var(--hexaos-blue));\n    box-shadow: 0 12px 30px rgba(18,104,244,.18);
+    @apply relative overflow-hidden rounded-full px-8 py-3 font-semibold text-white transition-all duration-500 hover:scale-105 active:scale-95;
+    background: linear-gradient(135deg, var(--hexaos-cyan), var(--hexaos-blue));
+    box-shadow: 0 12px 30px rgba(18,104,244,.18);
   }
 
   .btn-primary::before {
@@ -146,7 +148,9 @@ body {
 
   /* Tool Card */
   .tool-card {
-    @apply relative cursor-pointer overflow-hidden rounded-3xl border bg-white p-6 transition-all duration-500;\n    border-color: rgba(18,104,244,.10);\n    box-shadow: 0 10px 35px rgba(7,16,31,.04);
+    @apply relative cursor-pointer overflow-hidden rounded-3xl border bg-white p-6 transition-all duration-500;
+    border-color: rgba(18,104,244,.10);
+    box-shadow: 0 10px 35px rgba(7,16,31,.04);
   }
 
   .tool-card::before {
@@ -172,11 +176,14 @@ body {
   }
 
   .tool-icon {
-    @apply flex h-16 w-16 items-center justify-center rounded-2xl text-white transition-all duration-500;\n    background: linear-gradient(135deg, rgba(18,217,244,.14), rgba(18,104,244,.14));\n    color: var(--hexaos-blue);
+    @apply flex h-16 w-16 items-center justify-center rounded-2xl text-white transition-all duration-500;
+    background: linear-gradient(135deg, rgba(18,217,244,.14), rgba(18,104,244,.14));
+    color: var(--hexaos-blue);
   }
 
   .tool-card:hover .tool-icon {
-    @apply scale-110 rotate-3 text-white;\n    background: linear-gradient(135deg, var(--hexaos-cyan), var(--hexaos-blue));
+    @apply scale-110 rotate-3 text-white;
+    background: linear-gradient(135deg, var(--hexaos-cyan), var(--hexaos-blue));
   }
 
   /* Section Headers */
