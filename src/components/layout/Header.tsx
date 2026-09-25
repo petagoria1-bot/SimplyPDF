@@ -133,7 +133,7 @@ export default function Header() {
             <div className="relative h-10 w-10 transition-transform group-hover:scale-110 group-hover:rotate-3">
               <Image
                 src="/logo.png"
-                alt="SimplyPDF Logo"
+                alt="HEXAOS PDF Logo"
                 fill
                 className="rounded-xl object-contain"
                 priority
