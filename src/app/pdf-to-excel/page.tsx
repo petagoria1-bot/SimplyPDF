@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "PDF to XLSX",
     "Extract Table from PDF",
     "Free PDF to Excel Converter",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "PDF to Excel Converter | #1 Free Data Extraction Tool",
     description:
       "Turn your PDF tables into editable Excel files in seconds. Fast and secure.",
-    url: "https://simplypdf.vercel.app/pdf-to-excel",
+    url: "https://hexaos.fr/pdf-to-excel",
   },
 };
 
