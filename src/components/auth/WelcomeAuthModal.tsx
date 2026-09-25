@@ -33,7 +33,7 @@ export default function WelcomeAuthModal() {
 
     // Check if user has visited before
     // Using session storage so it resets per session (better for testing/gatekeeping)
-    const hasVisited = sessionStorage.getItem("simplypdf_welcome_session_v1");
+    const hasVisited = sessionStorage.getItem("hexaos_pdf_welcome_session_v1");
     if (!hasVisited && !user) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsOpen(true);
@@ -109,10 +109,10 @@ export default function WelcomeAuthModal() {
                 </motion.div>
 
                 <h2 className="mb-2 text-2xl font-bold text-gray-900">
-                  Welcome to SimplyPDF
+                  Bienvenue sur HEXAOS PDF
                 </h2>
                 <p className="text-gray-500">
-                  The Ultimate, Private PDF Toolkit
+                  La suite PDF privée, rapide et complète
                 </p>
               </div>
 
@@ -124,11 +124,11 @@ export default function WelcomeAuthModal() {
                   </div>
                   <div className="text-left">
                     <h3 className="text-sm font-semibold text-gray-900">
-                      100% Client-Side Privacy
+                      Confidentialité 100 % côté appareil
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">
-                      Your files never leave your device. We process everything
-                      locally in your browser for maximum security.
+                      Vos fichiers ne quittent jamais votre appareil. Tout est traité
+                      localement dans votre navigateur pour une confidentialité maximale.
                     </p>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default function WelcomeAuthModal() {
                     className="group flex w-full items-center justify-center gap-2 py-2.5 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900"
                   >
                     <X className="h-4 w-4 transition-transform group-hover:scale-110" />
-                    Continue as Guest
+                    Continuer en tant qu’invité
                   </button>
                 </div>
               </div>
