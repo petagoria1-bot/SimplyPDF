@@ -7,7 +7,7 @@ export const Testimonials = () => {
         <div className="scroll-reveal flex flex-wrap items-center justify-center gap-8">
           <div className="flex items-center gap-1">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-black" />
+              <Star key={i} className="h-5 w-5 fill-[#1268f4] stroke-[#1268f4]" />
             ))}
           </div>
           <div className="text-gray-500">
