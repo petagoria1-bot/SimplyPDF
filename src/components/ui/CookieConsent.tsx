@@ -24,7 +24,7 @@ export function CookieConsent() {
     setIsVisible(false);
   };
 
-  const handleDecline = () => {
+  const handleRefuser = () => {
     localStorage.setItem("cookie-consent", "declined");
     setIsVisible(false);
   };
@@ -48,7 +48,7 @@ export function CookieConsent() {
 
               <div className="flex-1 text-center md:text-left">
                 <h3 className="mb-2 text-xl font-bold text-gray-900">
-                  We Use Cookies
+                  Nous utilisons des cookies
                 </h3>
                 <p className="text-sm leading-relaxed font-medium text-gray-500">
                   We use cookies to enhance your experience, analyze site
@@ -63,7 +63,7 @@ export function CookieConsent() {
                   className="group flex items-center gap-2 px-4 py-2 text-sm font-bold text-gray-400 transition-colors hover:text-black"
                 >
                   <Info className="h-4 w-4 transition-transform group-hover:rotate-12" />
-                  Learn More
+                  En savoir plus
                 </Link>
                 <button
                   onClick={handleDecline}
@@ -75,7 +75,7 @@ export function CookieConsent() {
                   onClick={handleAccept}
                   className="w-full rounded-2xl bg-black px-10 py-3 text-sm font-bold text-white shadow-xl shadow-black/10 transition-all hover:scale-105 active:scale-95 sm:w-auto"
                 >
-                  Accept All
+                  Tout accepter
                 </button>
               </div>
 
