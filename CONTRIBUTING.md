@@ -1,20 +1,20 @@
-# Contributing to SimplyPDF
+# Contributing to HEXAOS PDF
 
-First off, thank you for considering contributing to SimplyPDF! It's people like you that make it such a great tool for everyone.
+Merci de contribuer à HEXAOS PDF ! Chaque contribution aide à améliorer le projet.
 
 ## Code of Conduct
 
 By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## How Can I Contribute?
+## Comment contribuer ?
 
-### Reporting Bugs
+### Signaler un bug
 
 - **Check for existing issues**: Before opening a new issue, please search the repository to see if the bug has already been reported.
 - **Use the template**: When creating a new issue, use the Bug Report template provided.
 - **Provide details**: Include as much information as possible, such as steps to reproduce, browser version, and any relevant logs or screenshots.
 
-### Suggesting Enhancements
+### Proposer une amélioration
 
 - **Check for existing suggestions**: See if someone else has already suggested the enhancement.
 - **Use the template**: Use the Feature Request template when opening an issue for an enhancement.
@@ -25,8 +25,8 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 1.  **Fork the repository** on GitHub.
 2.  **Clone your fork** locally:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/SimplyPDF.git
-    cd SimplyPDF
+    git clone https://github.com/YOUR_USERNAME/HEXAOS-PDF.git
+    cd HEXAOS PDF
     ```
 3.  **Install dependencies**:
     ```bash
