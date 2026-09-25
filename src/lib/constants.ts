@@ -89,7 +89,7 @@ export const tools = [
     href: "/insert-pages",
   },
   {
-    title: "JPG to PDF",
+    title: "JPG vers PDF",
     description: "Convertissez vos images en PDF",
     icon: ImagePlus,
     href: "/jpg-to-pdf",
@@ -249,10 +249,10 @@ export const features = [
 ];
 
 export const stats = [
-  { value: "Secure", label: "Traitement local" },
-  { value: "Fast", label: "Moteur optimisé" },
+  { value: "Sécurisé", label: "Traitement local" },
+  { value: "Rapide", label: "Moteur optimisé" },
   { value: "0", label: "Données stockées" },
-  { value: "Free", label: "Accès gratuit" },
+  { value: "Gratuit", label: "Accès gratuit" },
 ];
 
 export const aboutSocials = [
@@ -291,8 +291,8 @@ export const contactFaqs = [
     a: "Oui. Les suggestions de fonctionnalités sont les bienvenues via les canaux de contact du projet.",
   },
   {
-    q: "Is HEXAOS PDF open source?",
-    a: "The core functionality uses open-source libraries. For full source access or collaboration opportunities, please reach out directly.",
+    q: "HEXAOS PDF est-il open source ?",
+    a: "Le fonctionnement repose sur des bibliothèques open source. Pour accéder au code source ou contribuer au projet, consultez le dépôt du projet.",
   },
 ];
 
@@ -304,27 +304,27 @@ export const faqCategories = [
       {
         question: "Qu’est-ce que HEXAOS PDF ?",
         answer:
-          "HEXAOS PDF is a free online tool that lets you work with PDF files directly in your browser. You can merge, split, compress, convert, rotate, and edit PDFs without uploading them to any server. All processing happens locally on your device for maximum privacy and speed.",
+          "HEXAOS PDF est un outil gratuit qui vous permet de travailler avec vos fichiers PDF directement dans votre navigateur. Fusionnez, divisez, compressez, convertissez, faites pivoter et modifiez vos PDF sans les envoyer vers un serveur. Le traitement s’effectue localement sur votre appareil pour préserver votre confidentialité et offrir une expérience rapide.",
       },
       {
         question: "HEXAOS PDF est-il vraiment gratuit ?",
         answer:
-          "Yes, HEXAOS PDF is completely free to use with no hidden costs. All features are available at no charge. We sustain the service through non-intrusive advertising. There are no premium tiers, file limits, or watermarks on your documents.",
+          "Oui, HEXAOS PDF est gratuit, sans frais cachés. Les fonctionnalités sont accessibles sans abonnement obligatoire. Le service peut être financé par une publicité non intrusive. Aucun filigrane n’est ajouté à vos documents.",
       },
       {
         question: "Dois-je créer un compte ?",
         answer:
-          "No account is required to use any of our PDF tools. You can optionally sign in with Google to keep a history of your actions across sessions, but this is completely optional. All core features work without signing in.",
+          "Aucun compte n’est nécessaire pour utiliser nos outils PDF. Vous pouvez vous connecter avec Google si vous souhaitez conserver un historique de vos actions, mais cela reste facultatif. Les fonctionnalités principales sont disponibles sans connexion.",
       },
       {
         question: "Quelles sont les limites de taille des fichiers ?",
         answer:
-          "Since all processing happens in your browser, file limits depend on your device's available memory. Most modern devices can handle files up to 100MB without issues. For very large files (100MB+), performance may vary based on your device.",
+          "Comme le traitement s’effectue dans votre navigateur, les limites dépendent principalement de la mémoire disponible sur votre appareil. La plupart des appareils modernes peuvent traiter des fichiers importants, mais les performances peuvent varier pour les très gros documents.",
       },
       {
         question: "Quels navigateurs sont pris en charge ?",
         answer:
-          "HEXAOS PDF works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. We recommend using the latest version of your browser for the best experience. Mobile browsers are also fully supported.",
+          "HEXAOS PDF fonctionne avec les navigateurs modernes comme Chrome, Firefox, Safari, Edge et Opera. Pour une expérience optimale, utilisez une version récente de votre navigateur. Les navigateurs mobiles sont également pris en charge.",
       },
     ],
   },
@@ -335,22 +335,22 @@ export const faqCategories = [
       {
         question: "Mes fichiers sont-ils envoyés sur vos serveurs ?",
         answer:
-          "No, your files are NEVER uploaded to our servers. All PDF processing happens entirely in your web browser using JavaScript. This means your sensitive documents never leave your device, ensuring complete privacy and security.",
+          "Non. Vos fichiers ne sont pas envoyés sur nos serveurs pour le traitement PDF. Les opérations sont exécutées directement dans votre navigateur. Vos documents restent ainsi sur votre appareil pendant leur traitement.",
       },
       {
         question: "HEXAOS PDF peut-il être utilisé avec des documents sensibles ?",
         answer:
-          "Yes, HEXAOS PDF is extremely safe for sensitive documents. Since we process everything locally in your browser, confidential information like contracts, financial documents, or personal records never leave your computer. Your data stays on your device.",
+          "Le traitement local permet d’utiliser HEXAOS PDF pour des documents confidentiels sans transmettre leur contenu à un serveur de traitement. Les contrats, documents financiers et informations personnelles restent sur votre appareil pendant l’opération.",
       },
       {
         question: "Que deviennent mes fichiers après le traitement ?",
         answer:
-          "Your files exist only in your browser's memory while you're using the tool. When you close the tab or navigate away, all file data is automatically cleared. We don't store, cache, or have any access to your documents.",
+          "Les fichiers sont conservés temporairement dans la mémoire du navigateur pendant l’utilisation de l’outil. Lorsque vous fermez l’onglet ou quittez la page, les données de travail sont libérées. HEXAOS PDF ne nécessite pas de stockage distant de vos documents pour effectuer ces opérations.",
       },
       {
         question: "Utilisez-vous des cookies ?",
         answer:
-          "We use minimal cookies for essential functionality (like remembering theme preferences) and analytics to improve our service. We also use Google AdSense cookies for advertising. You can manage cookie preferences through your browser settings.",
+          "Nous utilisons un nombre limité de cookies nécessaires au fonctionnement du site et, lorsque cela est activé, à la mesure d’audience et à la publicité. Vous pouvez gérer vos préférences via le mécanisme de consentement aux cookies disponible sur le site.",
       },
     ],
   },
@@ -359,32 +359,32 @@ export const faqCategories = [
     icon: FileText,
     faqs: [
       {
-        question: "How do I merge multiple PDFs?",
+        question: "Comment fusionner plusieurs PDF ?",
         answer:
           "Go to the Fusionner PDF tool, drag and drop your PDF files or click to browse and select them. You can reorder files by dragging them into your preferred order. You can also expand each file to see pages, rotate or remove specific pages. When ready, click 'Merge & Download' to combine them into a single PDF.",
       },
       {
-        question: "How do I split a PDF into multiple files?",
+        question: "Comment diviser un PDF en plusieurs fichiers ?",
         answer:
           "Use the Diviser PDF tool. Upload your PDF, then choose how to split: by specific page ranges (e.g., '1-5, 8-10'), extract all pages as separate files, or select specific pages visually. Click 'Diviser PDF' to process and download your split files.",
       },
       {
-        question: "How does PDF compression work?",
+        question: "Comment fonctionne la compression PDF ?",
         answer:
           "Our compression tool optimizes your PDF by removing redundant data, optimizing images, and streamlining the file structure. The compression maintains document quality while reducing file size, typically achieving 30-70% size reduction depending on the original file's content.",
       },
       {
-        question: "Can I convert scanned PDFs to editable text?",
+        question: "Puis-je convertir un PDF numérisé en texte exploitable ?",
         answer:
           "Yes! Our OCR (Optical Character Recognition) tool can extract text from scanned documents and image-based PDFs. Upload your scanned PDF, and our tool will process it to extract readable, searchable text. The accuracy depends on the scan quality.",
       },
       {
-        question: "How do I add a password to my PDF?",
+        question: "Comment ajouter un mot de passe à mon PDF ?",
         answer:
           "Use the Protéger PDF tool. Upload your PDF, enter your desired password, and optionally set permissions (like preventing printing or copying). The tool will encrypt your PDF with industry-standard AES encryption.",
       },
       {
-        question: "What image formats can I convert to PDF?",
+        question: "Quels formats d’image puis-je convertir en PDF ?",
         answer:
           "Our JPG to PDF tool supports JPG, JPEG, PNG, and other common image formats. You can upload multiple images and combine them into a single PDF, or convert each image to its own PDF file.",
       },
@@ -395,27 +395,27 @@ export const faqCategories = [
     icon: Zap,
     faqs: [
       {
-        question: "Why is processing taking a long time?",
+        question: "Pourquoi le traitement est-il long ?",
         answer:
           "Processing time depends on your file size and your device's capabilities. Large PDFs with many pages or high-resolution images take longer. If processing seems stuck, try refreshing the page and using a smaller file, or try on a device with more RAM.",
       },
       {
-        question: "Why can't I upload my PDF?",
+        question: "Pourquoi ne puis-je pas importer mon PDF ?",
         answer:
           "Make sure your file has a .pdf extension and is a valid PDF document. Some PDFs may be corrupted or use unsupported features. If the file opens in other PDF readers, try saving it as a new PDF and uploading the new copy.",
       },
       {
-        question: "The output PDF looks different from the original",
+        question: "Le PDF obtenu est différent de l’original",
         answer:
           "PDF processing can sometimes affect formatting, especially for complex documents with special fonts or interactive elements. For best results, use source PDFs that are print-ready. If you're having issues, try using a different tool or contact us.",
       },
       {
-        question: "My protected PDF won't unlock",
+        question: "Mon PDF protégé ne se déverrouille pas",
         answer:
           "Our unlock tool can only remove restrictions (like no-printing) from PDFs. If the PDF requires a password to open (fully encrypted), you'll need to enter the correct password. We cannot bypass password protection without the password.",
       },
       {
-        question: "The download didn't start",
+        question: "Le téléchargement n’a pas démarré",
         answer:
           "Check if your browser is blocking downloads or pop-ups. Try using a different browser. If the issue persists, make sure you have enough disk space and try right-clicking the download button and selecting 'Save As'.",
       },
