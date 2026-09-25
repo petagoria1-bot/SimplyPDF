@@ -997,7 +997,7 @@ export function MergePDFClient() {
         images={previewImages}
         currentPage={previewPage}
         onPageChange={setAperçuPage}
-        onTélécharger={handleMerge}
+        onDownload={handleTélécharger}
         title="Fusionner PDF Aperçu"
       />
     </div>
