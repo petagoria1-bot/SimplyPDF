@@ -257,65 +257,26 @@ export const stats = [
 
 export const aboutSocials = [
   {
-    name: "Email",
-    href: "mailto:contact@hexaos.fr",
-    label: "contact@hexaos.fr",
-    color: "hover:bg-red-50 hover:text-red-600 hover:border-red-200",
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/hexaos/",
-    label: "linkedin.com/in/hexaos",
-    color: "hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200",
-  },
-  {
-    name: "GitHub",
-    href: "https://github.com/petagoria1-bot",
-    label: "github.com/petagoria1-bot",
-    color: "hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300",
-  },
-  {
-    name: "X (Twitter)",
-    href: "https://x.com/hexaos",
-    label: "x.com/hexaos",
+    name: "HEXAOS",
+    href: "https://hexaos.fr",
+    label: "hexaos.fr",
     color: "hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300",
   },
 ];
 
 export const aboutSkills = [
-  { label: "Game Development", detail: "Unity & C#" },
-  { label: "Web Development", detail: "Full-Stack Apps" },
-  { label: "App Development", detail: "Cross-Platform" },
-  { label: "Digital Creation", detail: "UI/UX Design" },
+  { label: "Traitement local", detail: "Dans votre navigateur" },
+  { label: "Rapide", detail: "Moteur optimisé" },
+  { label: "Confidentialité", detail: "Vos fichiers restent locaux" },
+  { label: "Suite complète", detail: "Outils PDF intégrés" },
 ];
 
 export const contactMethods = [
   {
-    name: "Email",
-    description: "Best for detailed inquiries",
-    value: "contact@hexaos.fr",
-    href: "mailto:contact@hexaos.fr",
-    color: "hover:bg-red-50 hover:border-red-200",
-  },
-  {
-    name: "X (Twitter)",
-    description: "Quick questions & updates",
-    value: "@hexaos",
-    href: "https://x.com/hexaos",
-    color: "hover:bg-gray-100 hover:border-gray-300",
-  },
-  {
-    name: "LinkedIn",
-    description: "Professional inquiries",
-    value: "linkedin.com/in/hexaos",
-    href: "https://www.linkedin.com/in/hexaos/",
-    color: "hover:bg-blue-50 hover:border-blue-200",
-  },
-  {
-    name: "GitHub",
-    description: "Bug reports & contributions",
-    value: "github.com/petagoria1-bot",
-    href: "https://github.com/petagoria1-bot",
+    name: "HEXAOS",
+    description: "Site officiel",
+    value: "hexaos.fr",
+    href: "https://hexaos.fr",
     color: "hover:bg-gray-100 hover:border-gray-300",
   },
 ];
