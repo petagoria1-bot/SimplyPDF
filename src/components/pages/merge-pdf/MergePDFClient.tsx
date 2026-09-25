@@ -10,7 +10,7 @@ import {
   Upload,
   File,
   X,
-  Download,
+  Télécharger,
   CheckCircle2,
   RefreshCw,
   AlertCircle,
@@ -20,15 +20,15 @@ import {
   Eye,
   RotateCw,
   Combine,
-  Undo,
-  Redo,
+  Annuler,
+  Rétablir,
   ArrowUpAZ,
   ArrowDownZA,
   ArrowUpDown,
 } from "lucide-react";
 import { PDFDocument, degrees } from "pdf-lib";
 import { uint8ArrayToBlob } from "@/lib/pdf-utils";
-import { PDFPreviewModal } from "@/components/pdf/PDFPreviewModal";
+import { PDFAperçuModal } from "@/components/pdf/PDFAperçuModal";
 import { useHistory } from "@/context/HistoryContext";
 import Image from "next/image";
 import {
@@ -49,10 +49,10 @@ export function MergePDFClient() {
   const [resultBlob, setResultBlob] = useState<Blob | null>(null);
   const [errorMessage, setErrorMessage] = useState("");
   const [dragActive, setDragActive] = useState(false);
-  const [previewOpen, setPreviewOpen] = useState(false);
-  const [previewImages, setPreviewImages] = useState<string[]>([]);
-  const [previewPage, setPreviewPage] = useState(0);
-  const [customFileName, setCustomFileName] = useState("merged.pdf");
+  const [previewOpen, setAperçuOpen] = useState(false);
+  const [previewImages, setAperçuImages] = useState<string[]>([]);
+  const [previewPage, setAperçuPage] = useState(0);
+  const [customFileName, setCustomFileName] = useState("merged-hexaos.pdf");
   const [metadata, setMetadata] = useState({
     title: "",
     author: "",
@@ -61,16 +61,16 @@ export function MergePDFClient() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const addMoreInputRef = useRef<HTMLInputElement>(null);
 
-  // History for Undo/Redo
-  const [undoRedoHistory, setUndoRedoHistory] = useState<FileInfo[][]>([]);
+  // History for Annuler/Rétablir
+  const [undoRétablirHistory, setAnnulerRétablirHistory] = useState<FileInfo[][]>([]);
   const [historyIndex, setHistoryIndex] = useState(-1);
 
-  const pushToUndoRedo = (newFiles: FileInfo[]) => {
-    const newHistory = undoRedoHistory.slice(0, historyIndex + 1);
+  const pushToAnnulerRétablir = (newFiles: FileInfo[]) => {
+    const newHistory = undoRétablirHistory.slice(0, historyIndex + 1);
     newHistory.push(newFiles);
     // Limit history size to 20
     if (newHistory.length > 20) newHistory.shift();
-    setUndoRedoHistory(newHistory);
+    setAnnulerRétablirHistory(newHistory);
     setHistoryIndex(newHistory.length - 1);
     setFiles(newFiles);
   };
@@ -79,15 +79,15 @@ export function MergePDFClient() {
     if (historyIndex > 0) {
       const newIndex = historyIndex - 1;
       setHistoryIndex(newIndex);
-      setFiles(undoRedoHistory[newIndex]);
+      setFiles(undoRétablirHistory[newIndex]);
     }
   };
 
   const redo = () => {
-    if (historyIndex < undoRedoHistory.length - 1) {
+    if (historyIndex < undoRétablirHistory.length - 1) {
       const newIndex = historyIndex + 1;
       setHistoryIndex(newIndex);
-      setFiles(undoRedoHistory[newIndex]);
+      setFiles(undoRétablirHistory[newIndex]);
     }
   };
 
@@ -101,7 +101,7 @@ export function MergePDFClient() {
       if (criteria === "size_desc") return b.size - a.size;
       return 0;
     });
-    pushToUndoRedo(sorted);
+    pushToAnnulerRétablir(sorted);
   };
 
   const handleDrop = async (e: React.DragEvent) => {
@@ -188,20 +188,20 @@ export function MergePDFClient() {
       }
 
       if (isFirstLoad) {
-        pushToUndoRedo(loadedFiles);
+        pushToAnnulerRétablir(loadedFiles);
         if (loadedFiles.length > 0) {
           const firstFileName = loadedFiles[0].name.replace(".pdf", "");
-          setCustomFileName(`${firstFileName}_merged.pdf`);
+          setCustomFileName(`${firstFileName}_fusionne.pdf`);
         }
       } else {
         const combinedFiles = [...files, ...loadedFiles];
-        pushToUndoRedo(combinedFiles);
+        pushToAnnulerRétablir(combinedFiles);
       }
       setStatus("ready");
     } catch (error) {
       console.error(error);
-      const message = error instanceof Error ? error.message : "Unknown error";
-      setErrorMessage(`Error loading PDFs: ${message}`);
+      const message = error instanceof Error ? error.message : "Erreur inconnue";
+      setErrorMessage(`Erreur lors du chargement des PDF : ${message}`);
       setStatus("error");
     }
   };
@@ -226,7 +226,7 @@ export function MergePDFClient() {
       }
       return f;
     });
-    pushToUndoRedo(newFiles);
+    pushToAnnulerRétablir(newFiles);
   };
 
   const removePage = (fileId: string, pageId: string) => {
@@ -238,7 +238,7 @@ export function MergePDFClient() {
         return f;
       })
       .filter((f) => f.pages.length > 0);
-    pushToUndoRedo(newFiles);
+    pushToAnnulerRétablir(newFiles);
   };
 
   const toggleFileExpand = (fileId: string) => {
@@ -251,7 +251,7 @@ export function MergePDFClient() {
 
   const removeFile = (fileId: string) => {
     const newFiles = files.filter((f) => f.id !== fileId);
-    pushToUndoRedo(newFiles);
+    pushToAnnulerRétablir(newFiles);
   };
 
   const handleRangeSelection = (fileId: string, rangeStr: string) => {
@@ -289,18 +289,18 @@ export function MergePDFClient() {
       }
       return f;
     });
-    pushToUndoRedo(newFiles);
+    pushToAnnulerRétablir(newFiles);
   };
 
-  const openPreview = (filePages: PageInfo[], startIndex: number) => {
-    setPreviewImages(filePages.filter((p) => !p.isHidden).map((p) => p.image));
+  const openAperçu = (filePages: PageInfo[], startIndex: number) => {
+    setAperçuImages(filePages.filter((p) => !p.isHidden).map((p) => p.image));
     // Need to find the index of the clicked page among visible pages
     const clickedPageId = filePages[startIndex].id;
     const visiblePages = filePages.filter((p) => !p.isHidden);
     const newIndex = visiblePages.findIndex((p) => p.id === clickedPageId);
 
-    setPreviewPage(newIndex !== -1 ? newIndex : 0);
-    setPreviewOpen(true);
+    setAperçuPage(newIndex !== -1 ? newIndex : 0);
+    setAperçuOpen(true);
   };
 
   const handleMerge = async () => {
@@ -316,8 +316,8 @@ export function MergePDFClient() {
       if (metadata.title) mergedPdf.setTitle(metadata.title);
       if (metadata.author) mergedPdf.setAuthor(metadata.author);
       if (metadata.subject) mergedPdf.setSubject(metadata.subject);
-      mergedPdf.setProducer("SimplyPDF");
-      mergedPdf.setCreator("SimplyPDF");
+      mergedPdf.setProducer("HEXAOS PDF");
+      mergedPdf.setCreator("HEXAOS PDF");
 
       // Cache loaded source PDFs to avoid reloading the same file multiple times
       const loadedPdfs = new Map<string, PDFDocument>();
@@ -358,18 +358,18 @@ export function MergePDFClient() {
 
       // Add to history
       recordAction(
-        "Merged PDF",
-        "merged_SimplyPDF.pdf",
+        "PDF fusionné",
+        "pdf-fusionne-hexaos.pdf",
         `${files.length} files merged`
       );
     } catch (error) {
       console.error(error);
-      setErrorMessage("Failed to merge PDFs. Please try again.");
+      setErrorMessage("Impossible de fusionner les PDF. Veuillez réessayer.");
       setStatus("error");
     }
   };
 
-  const handleDownload = () => {
+  const handleTélécharger = () => {
     if (!resultBlob) return;
     const url = URL.createObjectURL(resultBlob);
     const link = document.createElement("a");
@@ -386,9 +386,9 @@ export function MergePDFClient() {
     setStatus("idle");
     setResultBlob(null);
     setErrorMessage("");
-    setCustomFileName("merged.pdf");
+    setCustomFileName("merged-hexaos.pdf");
     setMetadata({ title: "", author: "", subject: "" });
-    setUndoRedoHistory([]);
+    setAnnulerRétablirHistory([]);
     setHistoryIndex(-1);
   };
 
@@ -397,9 +397,9 @@ export function MergePDFClient() {
       f.pages.filter((p) => !p.isHidden).map((p) => p.image)
     );
     if (allPages.length > 0) {
-      setPreviewImages(allPages);
-      setPreviewPage(0);
-      setPreviewOpen(true);
+      setAperçuImages(allPages);
+      setAperçuPage(0);
+      setAperçuOpen(true);
     }
   };
 
@@ -422,8 +422,8 @@ export function MergePDFClient() {
               className="mx-auto max-w-4xl"
             >
               <ToolHeader
-                title="Merge PDF"
-                description="Combine multiple PDFs into one. Rearrange, rotate, or delete pages before merging."
+                title="Fusionner PDF"
+                description="Combinez plusieurs PDF into one. Rearrange, rotate, or delete pages before merging."
                 icon={Combine}
               />
 
@@ -448,10 +448,10 @@ export function MergePDFClient() {
                   />
                   <Upload className="mb-4 h-12 w-12 text-gray-400" />
                   <p className="mb-2 text-lg font-medium">
-                    Drop your PDFs here
+                    Déposez vos PDF ici
                   </p>
                   <p className="text-sm text-gray-400">
-                    or click to browse • Multiple files supported
+                    ou cliquez pour parcourir • Multiple files supported
                   </p>
                 </div>
               </ToolCard>
@@ -460,8 +460,8 @@ export function MergePDFClient() {
 
           {status === "loading" && (
             <ProcessingState
-              message="Loading PDFs..."
-              description="Generating page previews..."
+              message="Chargement des PDF…"
+              description="Génération des aperçus…"
             />
           )}
 
@@ -480,7 +480,7 @@ export function MergePDFClient() {
                     <Combine className="h-6 w-6" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold">Merge PDFs</h2>
+                    <h2 className="text-2xl font-bold">Fusionner les PDF</h2>
                     <p className="text-sm text-gray-500">
                       {files.length} file{files.length !== 1 ? "s" : ""} •{" "}
                       {totalPages} pages total
@@ -492,14 +492,14 @@ export function MergePDFClient() {
                     onClick={reset}
                     className="btn-outline rounded-xl px-4 py-2 text-sm"
                   >
-                    Reset
+                    Réinitialiser
                   </button>
                   <button
                     onClick={handleMerge}
                     disabled={files.length === 0}
                     className="btn-primary rounded-xl px-6 py-2 shadow-lg shadow-black/10 disabled:opacity-50"
                   >
-                    Merge & Download
+                    Fusionner et télécharger
                   </button>
                 </div>
               </div>
@@ -515,18 +515,18 @@ export function MergePDFClient() {
                           onClick={undo}
                           disabled={historyIndex <= 0}
                           className="rounded-md p-1.5 transition-colors hover:bg-gray-100 disabled:opacity-30"
-                          title="Undo"
+                          title="Annuler"
                         >
-                          <Undo className="h-4 w-4" />
+                          <Annuler className="h-4 w-4" />
                         </button>
                         <div className="mx-1 h-4 w-px bg-gray-200" />
                         <button
                           onClick={redo}
-                          disabled={historyIndex >= undoRedoHistory.length - 1}
+                          disabled={historyIndex >= undoRétablirHistory.length - 1}
                           className="rounded-md p-1.5 transition-colors hover:bg-gray-100 disabled:opacity-30"
-                          title="Redo"
+                          title="Rétablir"
                         >
-                          <Redo className="h-4 w-4" />
+                          <Rétablir className="h-4 w-4" />
                         </button>
                       </div>
 
@@ -698,7 +698,7 @@ export function MergePDFClient() {
                                         <div className="absolute inset-0 flex items-center justify-center gap-2 bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">
                                           <button
                                             onClick={() =>
-                                              openPreview(file.pages, pIdx)
+                                              openAperçu(file.pages, pIdx)
                                             }
                                             className="rounded-lg bg-white p-1.5 shadow-lg transition-transform hover:scale-110"
                                           >
@@ -851,7 +851,7 @@ export function MergePDFClient() {
                           className="btn-outline flex w-full items-center justify-center gap-2 rounded-2xl py-3 text-sm font-bold"
                         >
                           <Eye className="h-4 w-4" />
-                          Preview Result
+                          Aperçu Result
                         </button>
                         <button
                           onClick={handleMerge}
@@ -900,11 +900,11 @@ export function MergePDFClient() {
 
               <div className="flex flex-col gap-4 sm:flex-row">
                 <button
-                  onClick={handleDownload}
+                  onClick={handleTélécharger}
                   className="btn-primary flex items-center gap-2 px-10 py-4"
                 >
-                  <Download className="h-5 w-5" />
-                  Download PDF
+                  <Télécharger className="h-5 w-5" />
+                  Télécharger PDF
                 </button>
                 <button
                   onClick={reset}
@@ -943,7 +943,7 @@ export function MergePDFClient() {
 
         <EducationalContent
           howItWorks={{
-            title: "How to Merge PDF Files",
+            title: "How to Fusionner PDF Files",
             steps: [
               "Upload your PDF files by dragging and dropping them or clicking 'Upload PDFs'.",
               "Arrange the files in your desired order. You can also rotate or remove specific pages.",
@@ -991,14 +991,14 @@ export function MergePDFClient() {
         />
       </div>
 
-      <PDFPreviewModal
+      <PDFAperçuModal
         isOpen={previewOpen}
-        onClose={() => setPreviewOpen(false)}
+        onClose={() => setAperçuOpen(false)}
         images={previewImages}
         currentPage={previewPage}
-        onPageChange={setPreviewPage}
-        onDownload={handleMerge}
-        title="Merge PDF Preview"
+        onPageChange={setAperçuPage}
+        onTélécharger={handleMerge}
+        title="Fusionner PDF Aperçu"
       />
     </div>
   );
