@@ -29,16 +29,16 @@ const alexBrush = Alex_Brush({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || "https://simplypdf.vercel.app"
+    process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr"
   ),
   title: {
-    default: "SimplyPDF | #1 Free Online PDF Editor, Merger & Converter",
-    template: "%s | SimplyPDF",
+    default: "HEXAOS PDF | #1 Free Online PDF Editor, Merger & Converter",
+    template: "%s | HEXAOS PDF",
   },
   description:
-    "SimplyPDF is the world's most premium, free online PDF tool. Edit, merge, split, compress, and convert PDFs 100% locally in your browser. Fast, secure, and no sign-up required.",
-  applicationName: "SimplyPDF",
-  authors: [{ name: "SimplyPDF Team" }],
+    "HEXAOS PDF is the world's most premium, free online PDF tool. Edit, merge, split, compress, and convert PDFs 100% locally in your browser. Fast, secure, and no sign-up required.",
+  applicationName: "HEXAOS PDF",
+  authors: [{ name: "HEXAOS PDF Team" }],
   keywords: [
     "PDF Editor",
     "Merge PDF",
@@ -60,25 +60,25 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   openGraph: {
-    title: "SimplyPDF | The Easiest & Most Secure PDF Tool",
+    title: "HEXAOS PDF | The Easiest & Most Secure PDF Tool",
     description:
       "The premium way to manage your PDFs. 100% browser-based editing, merging, and converting. Your files never leave your device.",
-    url: "https://simplypdf.vercel.app",
-    siteName: "SimplyPDF",
-    locale: "en_US",
+    url: "https://hexaos.fr",
+    siteName: "HEXAOS PDF",
+    locale: "fr_FR",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SimplyPDF - Free Online PDF Tools",
+        alt: "HEXAOS PDF - Free Online PDF Tools",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SimplyPDF | #1 Free Online PDF Tools",
+    title: "HEXAOS PDF | #1 Free Online PDF Tools",
     description:
       "Premium PDF editing and management, 100% private and secure. No uploads, no limits.",
     images: ["/og-image.png"],
@@ -97,20 +97,20 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "SimplyPDF",
-    url: process.env.NEXT_PUBLIC_BASE_URL || "https://simplypdf.vercel.app",
+    name: "HEXAOS PDF",
+    url: process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr",
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: `${process.env.NEXT_PUBLIC_BASE_URL || "https://simplypdf.vercel.app"}/?q={search_term_string}`,
+        urlTemplate: `${process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr"}/?q={search_term_string}`,
       },
       "query-input": "required name=search_term_string",
     },
   };
 
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
