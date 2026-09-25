@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "PDF to Image",
     "Extract PDF Pages",
     "Free Online Converter",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "PDF to JPG Converter | #1 Free Image Extraction Tool",
     description:
       "Turn your PDF pages into high-quality images in seconds. No uploads, 100% private.",
-    url: "https://simplypdf.vercel.app/pdf-to-jpg",
+    url: "https://hexaos.fr/pdf-to-jpg",
   },
 };
 
