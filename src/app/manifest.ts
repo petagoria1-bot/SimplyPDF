@@ -2,8 +2,8 @@ import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "SimplyPDF",
-    short_name: "SimplyPDF",
+    name: "HEXAOS PDF",
+    short_name: "HEXAOS PDF",
     description:
       "The Easiest PDF Tool for merging, splitting, compressing, and converting PDFs.",
     start_url: "/",
