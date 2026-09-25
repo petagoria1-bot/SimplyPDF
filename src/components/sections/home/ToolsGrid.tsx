@@ -34,10 +34,10 @@ export const ToolsGrid = () => {
             <Link
               key={tool.href}
               href={tool.href}
-              className={`tool-card group flex flex-col transition-all duration-300 hover:shadow-2xl ${index === 0 ? "min-h-[400px] lg:col-span-2 lg:row-span-2" : "min-h-[220px]"}`}
+              className={`tool-card group flex flex-col transition-all duration-300 ${index === 0 ? "min-h-[360px] lg:col-span-2 lg:row-span-2" : "min-h-[210px]"}`}
             >
               <div
-                className={`tool-icon ${index === 0 ? "h-20 w-20" : "h-14 w-14"} mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-black group-hover:text-white`}
+                className={`tool-icon ${index === 0 ? "h-20 w-20" : "h-14 w-14"} mb-6 transition-all duration-500 group-hover:scale-110 group-hover:bg-[#1268f4] group-hover:text-white`}
               >
                 <tool.icon className={index === 0 ? "h-10 w-10" : "h-7 w-7"} />
               </div>
@@ -51,7 +51,7 @@ export const ToolsGrid = () => {
               >
                 {tool.description}
               </p>
-              <div className="mt-auto flex items-center pt-6 text-sm font-black tracking-widest text-black/20 uppercase transition-colors group-hover:text-black">
+              <div className="mt-auto flex items-center pt-6 text-sm font-black tracking-widest text-gray-400 uppercase transition-colors group-hover:text-[#1268f4]">
                 Ouvrir l’outil{" "}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
               </div>
@@ -76,7 +76,7 @@ export const ToolsGrid = () => {
                 <p className="text-sm font-medium text-gray-500">
                   {tool.description}
                 </p>
-                <div className="mt-auto flex items-center pt-6 text-xs font-black tracking-widest text-black/10 uppercase transition-colors group-hover:text-black">
+                <div className="mt-auto flex items-center pt-6 text-xs font-black tracking-widest text-gray-400 uppercase transition-colors group-hover:text-[#1268f4]">
                   Ouvrir l’outil{" "}
                   <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                 </div>
@@ -89,7 +89,7 @@ export const ToolsGrid = () => {
           <div className="mt-16 text-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group inline-flex items-center gap-2 rounded-full bg-black px-10 py-5 text-lg font-bold text-white shadow-2xl transition-all hover:scale-105 active:scale-95"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#07101f] px-8 py-4 text-base font-bold text-white shadow-2xl transition-all hover:scale-105 active:scale-95"
             >
               {showAll ? "Réduire la liste" : "Voir tous les outils"}
               <ChevronDown
