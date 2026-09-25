@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Add Watermark to PDF",
     "PDF Watermark Online",
     "Protect PDF with Watermark",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Add Watermark to PDF | #1 Free Watermarking Tool",
     description:
       "Stamp your PDF files with custom watermarks in seconds. Easy, free, and secure.",
-    url: "https://simplypdf.vercel.app/watermark-pdf",
+    url: "https://hexaos.fr/watermark-pdf",
   },
 };
 
