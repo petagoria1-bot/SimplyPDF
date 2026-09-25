@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Change PDF Title",
     "Update PDF Author",
     "PDF Properties Editor",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Edit PDF Metadata | #1 Free PDF Property Editor",
     description:
       "Manage your PDF file properties easily. Fast, free, and secure.",
-    url: "https://simplypdf.vercel.app/edit-metadata",
+    url: "https://hexaos.fr/edit-metadata",
   },
 };
 
