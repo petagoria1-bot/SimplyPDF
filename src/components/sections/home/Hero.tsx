@@ -35,7 +35,7 @@ export const Hero = () => {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="absolute top-32 left-[15%] hidden lg:block"
       >
-        <div className="animate-float flex h-16 w-16 items-center justify-center rounded-2xl bg-white shadow-xl">
+        <div className="animate-float flex h-16 w-16 items-center justify-center rounded-2xl border border-blue-100 bg-white shadow-xl shadow-blue-100/50">
           <FileText className="h-8 w-8" />
         </div>
       </motion.div>
@@ -45,7 +45,7 @@ export const Hero = () => {
         transition={{ delay: 0.7, duration: 0.8 }}
         className="absolute top-48 right-[12%] hidden lg:block"
       >
-        <div className="animate-float-slow flex h-20 w-20 items-center justify-center rounded-2xl bg-black text-white shadow-xl">
+        <div className="animate-float-slow flex h-20 w-20 items-center justify-center rounded-2xl text-white shadow-xl shadow-blue-200/50" style={{ background: "linear-gradient(135deg,#12d9f4,#1268f4)" }}>
           <Merge className="h-10 w-10" />
         </div>
       </motion.div>
@@ -55,7 +55,7 @@ export const Hero = () => {
         transition={{ delay: 0.9, duration: 0.8 }}
         className="absolute bottom-40 left-[20%] hidden lg:block"
       >
-        <div className="animate-float flex h-14 w-14 items-center justify-center rounded-xl bg-gray-100 shadow-lg">
+        <div className="animate-float flex h-14 w-14 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shadow-lg shadow-blue-100/50">
           <ImageIcon className="h-7 w-7" />
         </div>
       </motion.div>
@@ -69,7 +69,7 @@ export const Hero = () => {
         >
           <span className="mb-8 inline-flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium">
             <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
-            100% Free & Privacy First
+            100 % gratuit · confidentialité d'abord
           </span>
         </motion.div>
 
@@ -79,9 +79,9 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="mb-6 text-5xl leading-[0.95] font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
         >
-          Every PDF Tool
+          Tous vos outils PDF
           <br />
-          <span className="animate-text-shimmer">You&apos;ll Ever Need</span>
+          <span className="animate-text-shimmer">Simplement, rapidement, en toute confidentialité</span>
         </motion.h1>
 
         <motion.p
@@ -90,9 +90,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-gray-500 md:text-xl"
         >
-          Merge, split, compress, convert — do everything with your PDFs. All
-          processing happens in your browser. Your files never leave your
-          device.
+          Fusionnez, divisez, compressez, convertissez et modifiez vos PDF directement dans votre navigateur. Vos fichiers restent sur votre appareil.
         </motion.p>
 
         <motion.div
@@ -106,7 +104,7 @@ export const Hero = () => {
             className="btn-primary group relative inline-flex items-center justify-center gap-2 overflow-hidden px-10 py-4 text-lg"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Get Started
+              Commencer
               <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
             </span>
           </Link>
@@ -114,7 +112,7 @@ export const Hero = () => {
             href="#tools"
             className="btn-secondary group relative inline-flex items-center justify-center overflow-hidden px-10 py-4 text-lg"
           >
-            <span className="relative z-10">Explore Tools</span>
+            <span className="relative z-10">Explorer les outils</span>
           </Link>
         </motion.div>
       </div>
