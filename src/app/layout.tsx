@@ -55,9 +55,9 @@ export const metadata: Metadata = {
     "No upload PDF tool",
   ],
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/icon.png",
-    apple: "/apple-icon.png",
+    icon: "/hexaos-pdf-icon.svg",
+    shortcut: "/hexaos-pdf-icon.svg",
+    apple: "/hexaos-pdf-icon.svg",
   },
   openGraph: {
     title: "HEXAOS PDF | The Easiest & Most Secure PDF Tool",
