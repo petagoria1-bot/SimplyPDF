@@ -110,7 +110,15 @@ body {
   }
 
   .btn-secondary {
-    @apply rounded-full border-2 px-8 py-3 font-semibold transition-all duration-500 hover:scale-105 active:scale-95;\n    border-color: rgba(18,104,244,.28);\n    background: #fff; color: var(--hexaos-blue);\n    hover:bg-[var(--hexaos-blue)]; hover:text-white;
+    @apply rounded-full border-2 px-8 py-3 font-semibold transition-all duration-500 hover:scale-105 active:scale-95;
+    border-color: rgba(18,104,244,.28);
+    background: #fff;
+    color: var(--hexaos-blue);
+  }
+
+  .btn-secondary:hover {
+    background: var(--hexaos-blue);
+    color: #fff;
   }
 
   .btn-outline {
