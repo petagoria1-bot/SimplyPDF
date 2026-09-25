@@ -2,7 +2,7 @@
 
 import { useCallback, useRef } from "react";
 import { motion, Reorder } from "framer-motion";
-import { Upload, File, X, GripVertical, Plus } from "lucide-react";
+import { UploadCloud, FileText, X, GripVertical, Plus } from "lucide-react";
 
 interface FileUploaderProps {
   files: File[];
@@ -76,7 +76,7 @@ export function FileUploader({
             >
               <GripVertical className="h-4 w-4 text-gray-400" />
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#07101f] text-white">
-                <File className="h-5 w-5" />
+                <FileText className="h-5 w-5" />
               </div>
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-medium">{file.name}</p>
@@ -143,16 +143,16 @@ export function FileUploader({
           htmlFor="file-upload"
           onDragOver={(e) => e.preventDefault()}
           onDrop={handleDrop}
-          className="group flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-200 p-12 transition-all duration-300 hover:border-[#1268f4] hover:bg-[#1268f4]/5"
+          className="group flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-200 bg-gray-50/60 px-5 py-10 transition-all duration-300 hover:border-[#1268f4] hover:bg-[#1268f4]/5"
         >
-          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-100 transition-all group-hover:bg-[#1268f4] group-hover:text-white">
-            <Upload className="h-8 w-8" />
+          <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#1268f4] shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-[#1268f4] group-hover:text-white">
+            <UploadCloud className="h-8 w-8" />
           </div>
           <p className="mb-2 text-lg font-semibold">
-            Drop files here or click to upload
+            Glissez-déposez votre document ici
           </p>
           <p className="text-sm text-gray-400">
-            {multiple ? "Sélectionnez un ou plusieurs fichiers" : "Sélectionnez un fichier"}
+            {multiple ? "Sélectionnez un ou plusieurs fichiers depuis votre appareil" : "Sélectionnez un fichier depuis votre appareil"}
           </p>
         </label>
       ) : (
@@ -165,7 +165,7 @@ export function FileUploader({
               className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border-2 border-dashed border-gray-200 p-4 text-gray-500 transition-all hover:border-[#1268f4] hover:bg-[#1268f4]/5 hover:text-black"
             >
               <Plus className="h-5 w-5" />
-              Add more files
+              Ajouter un autre fichier
             </label>
           )}
         </div>
