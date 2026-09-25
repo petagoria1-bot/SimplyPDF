@@ -130,18 +130,15 @@ export default function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2">
-            <div className="relative h-10 w-10 transition-transform group-hover:scale-110 group-hover:rotate-3">
+            <div className="relative h-11 w-44 transition-transform group-hover:scale-[1.02]">
               <Image
-                src="/logo.png"
-                alt="HEXAOS PDF Logo"
+                src="/hexaos-pdf-logo.svg"
+                alt="HEXAOS PDF"
                 fill
-                className="rounded-xl object-contain"
+                className="object-contain object-left"
                 priority
               />
             </div>
-            <span className="text-xl font-bold tracking-tight">
-              Simply<span className="text-gray-400">PDF</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -153,7 +150,7 @@ export default function Header() {
               onMouseLeave={() => setShowTools(false)}
             >
               <button className="underline-hover flex items-center gap-1 py-2 font-medium text-gray-700 transition-colors hover:text-black">
-                All Tools
+                Tous les outils
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${showTools ? "rotate-180" : ""}`}
                 />
@@ -211,7 +208,7 @@ export default function Header() {
               href="/about"
               className="underline-hover font-medium text-gray-700 transition-colors hover:text-black"
             >
-              About
+              À propos
             </Link>
           </div>
 
@@ -279,7 +276,7 @@ export default function Header() {
                           className="flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors hover:bg-gray-50"
                         >
                           <History className="h-4 w-4 text-gray-500" />
-                          <span className="text-sm">My History</span>
+                          <span className="text-sm">Mon historique</span>
                         </Link>
                         <button
                           onClick={() => {
@@ -289,7 +286,7 @@ export default function Header() {
                           className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-red-600 transition-colors hover:bg-red-50"
                         >
                           <LogOut className="h-4 w-4" />
-                          <span className="text-sm">Sign Out</span>
+                          <span className="text-sm">Se déconnecter</span>
                         </button>
                       </div>
                     </motion.div>
@@ -297,13 +294,13 @@ export default function Header() {
                 </AnimatePresence>
               </div>
             ) : (
-              // Not logged in - Google Sign In button
+              // Not logged in - Google Se connecter button
               <button
                 onClick={() => setShowSignInModal(true)}
                 className="group flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white shadow-md transition-all hover:scale-105 active:scale-95"
               >
                 <LogIn className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-                Sign In
+                Se connecter
               </button>
             )}
           </div>
@@ -391,7 +388,7 @@ export default function Header() {
                     className="flex w-full items-center justify-center gap-2 rounded-xl bg-black py-3 font-medium text-white shadow-sm transition-colors hover:bg-gray-800"
                   >
                     <LogIn className="h-5 w-5" />
-                    Sign In with Google
+                    Se connecter avec Google
                   </button>
                 )}
               </div>
@@ -404,7 +401,7 @@ export default function Header() {
                   className="mb-4 flex items-center gap-3 rounded-xl bg-gray-50 p-3 transition-colors hover:bg-gray-100"
                 >
                   <History className="h-5 w-5 text-gray-500" />
-                  <span className="text-sm font-medium">My History</span>
+                  <span className="text-sm font-medium">Mon historique</span>
                 </Link>
               )}
 
@@ -427,7 +424,7 @@ export default function Header() {
                   onClick={() => setIsMenuOpen(false)}
                   className="btn-primary w-full justify-center"
                 >
-                  Get Started
+                  Commencer
                 </Link>
               </div>
             </div>
