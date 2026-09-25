@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Remove PDF Password",
     "PDF Decrypt",
     "Free PDF Unlocker",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Unlock PDF Online | #1 Free PDF Unlocking Tool",
     description:
       "Remove PDF restrictions and passwords in seconds. Fast and private.",
-    url: "https://simplypdf.vercel.app/unlock-pdf",
+    url: "https://hexaos.fr/unlock-pdf",
   },
 };
 
