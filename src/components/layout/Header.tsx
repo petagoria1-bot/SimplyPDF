@@ -132,7 +132,7 @@ export default function Header() {
           <Link href="/" className="group flex items-center gap-2">
             <div className="relative h-11 w-44 transition-transform group-hover:scale-[1.02]">
               <Image
-                src="/hexaos-pdf-logo.svg"
+                src="/pdf/hexaos-pdf-logo.svg"
                 alt="HEXAOS PDF"
                 fill
                 className="object-contain object-left"
