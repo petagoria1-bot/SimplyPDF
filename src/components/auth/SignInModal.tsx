@@ -103,10 +103,10 @@ export default function SignInModal({ isOpen, onClose }: SignInModalProps) {
                 </motion.div>
 
                 <h2 className="mb-2 text-2xl font-bold text-gray-900">
-                  Welcome Back
+                  Bon retour
                 </h2>
                 <p className="text-gray-500">
-                  Sign in to access your dashboard
+                  Connectez-vous pour accéder à votre espace
                 </p>
               </div>
 
@@ -118,11 +118,11 @@ export default function SignInModal({ isOpen, onClose }: SignInModalProps) {
                   </div>
                   <div className="text-left">
                     <h3 className="text-sm font-semibold text-gray-900">
-                      Secure & Private
+                      Sécurisé et privé
                     </h3>
                     <p className="mt-1 text-sm text-gray-500">
-                      Your files are processed locally. Sync your preferences
-                      and history securely.
+                      Vos fichiers sont traités localement. Synchronisez vos préférences
+                      et votre historique en toute sécurité.
                     </p>
                   </div>
                 </div>
