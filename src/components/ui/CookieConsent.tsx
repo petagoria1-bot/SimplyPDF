@@ -51,9 +51,7 @@ export function CookieConsent() {
                   Nous utilisons des cookies
                 </h3>
                 <p className="text-sm leading-relaxed font-medium text-gray-500">
-                  We use cookies to enhance your experience, analyze site
-                  traffic, and serve relevant content. By clicking
-                  &quot;Accept&quot;, you agree to our use of cookies.
+                  Nous utilisons des cookies nécessaires au fonctionnement du site et, lorsque vous les acceptez, pour améliorer votre expérience et mesurer l’audience. Vous pouvez modifier votre choix à tout moment.
                 </p>
               </div>
 
@@ -66,10 +64,10 @@ export function CookieConsent() {
                   En savoir plus
                 </Link>
                 <button
-                  onClick={handleDecline}
+                  onClick={handleRefuser}
                   className="w-full rounded-2xl bg-gray-100 px-8 py-3 text-sm font-bold text-gray-600 transition-all hover:bg-gray-200 sm:w-auto"
                 >
-                  Decline
+                  Refuser
                 </button>
                 <button
                   onClick={handleAccept}
