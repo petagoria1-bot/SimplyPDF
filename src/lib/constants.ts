@@ -258,26 +258,26 @@ export const stats = [
 export const aboutSocials = [
   {
     name: "Email",
-    href: "mailto:arshverma.dev@gmail.com",
-    label: "arshverma.dev@gmail.com",
+    href: "mailto:contact@hexaos.fr",
+    label: "contact@hexaos.fr",
     color: "hover:bg-red-50 hover:text-red-600 hover:border-red-200",
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/arshvermadev/",
-    label: "linkedin.com/in/arshvermadev",
+    href: "https://www.linkedin.com/in/hexaos/",
+    label: "linkedin.com/in/hexaos",
     color: "hover:bg-blue-50 hover:text-blue-600 hover:border-blue-200",
   },
   {
     name: "GitHub",
-    href: "https://github.com/ArshVermaGit",
-    label: "github.com/ArshVermaGit",
+    href: "https://github.com/petagoria1-bot",
+    label: "github.com/petagoria1-bot",
     color: "hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300",
   },
   {
     name: "X (Twitter)",
-    href: "https://x.com/TheArshVerma",
-    label: "x.com/TheArshVerma",
+    href: "https://x.com/hexaos",
+    label: "x.com/hexaos",
     color: "hover:bg-gray-100 hover:text-gray-900 hover:border-gray-300",
   },
 ];
@@ -293,29 +293,29 @@ export const contactMethods = [
   {
     name: "Email",
     description: "Best for detailed inquiries",
-    value: "arshverma.dev@gmail.com",
-    href: "mailto:arshverma.dev@gmail.com",
+    value: "contact@hexaos.fr",
+    href: "mailto:contact@hexaos.fr",
     color: "hover:bg-red-50 hover:border-red-200",
   },
   {
     name: "X (Twitter)",
     description: "Quick questions & updates",
-    value: "@TheArshVerma",
-    href: "https://x.com/TheArshVerma",
+    value: "@hexaos",
+    href: "https://x.com/hexaos",
     color: "hover:bg-gray-100 hover:border-gray-300",
   },
   {
     name: "LinkedIn",
     description: "Professional inquiries",
-    value: "linkedin.com/in/arshvermadev",
-    href: "https://www.linkedin.com/in/arshvermadev/",
+    value: "linkedin.com/in/hexaos",
+    href: "https://www.linkedin.com/in/hexaos/",
     color: "hover:bg-blue-50 hover:border-blue-200",
   },
   {
     name: "GitHub",
     description: "Bug reports & contributions",
-    value: "github.com/ArshVermaGit",
-    href: "https://github.com/ArshVermaGit",
+    value: "github.com/petagoria1-bot",
+    href: "https://github.com/petagoria1-bot",
     color: "hover:bg-gray-100 hover:border-gray-300",
   },
 ];
@@ -330,7 +330,7 @@ export const contactFaqs = [
     a: "Absolutely! I love hearing feature suggestions. Send them via email or create an issue on GitHub.",
   },
   {
-    q: "Is SimplyPDF open source?",
+    q: "Is HEXAOS PDF open source?",
     a: "The core functionality uses open-source libraries. For full source access or collaboration opportunities, please reach out directly.",
   },
 ];
@@ -341,14 +341,14 @@ export const faqCategories = [
     icon: HelpCircle,
     faqs: [
       {
-        question: "What is SimplyPDF?",
+        question: "What is HEXAOS PDF?",
         answer:
-          "SimplyPDF is a free online tool that lets you work with PDF files directly in your browser. You can merge, split, compress, convert, rotate, and edit PDFs without uploading them to any server. All processing happens locally on your device for maximum privacy and speed.",
+          "HEXAOS PDF is a free online tool that lets you work with PDF files directly in your browser. You can merge, split, compress, convert, rotate, and edit PDFs without uploading them to any server. All processing happens locally on your device for maximum privacy and speed.",
       },
       {
-        question: "Is SimplyPDF really free?",
+        question: "Is HEXAOS PDF really free?",
         answer:
-          "Yes, SimplyPDF is completely free to use with no hidden costs. All features are available at no charge. We sustain the service through non-intrusive advertising. There are no premium tiers, file limits, or watermarks on your documents.",
+          "Yes, HEXAOS PDF is completely free to use with no hidden costs. All features are available at no charge. We sustain the service through non-intrusive advertising. There are no premium tiers, file limits, or watermarks on your documents.",
       },
       {
         question: "Do I need to create an account?",
@@ -363,7 +363,7 @@ export const faqCategories = [
       {
         question: "What browsers are supported?",
         answer:
-          "SimplyPDF works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. We recommend using the latest version of your browser for the best experience. Mobile browsers are also fully supported.",
+          "HEXAOS PDF works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. We recommend using the latest version of your browser for the best experience. Mobile browsers are also fully supported.",
       },
     ],
   },
@@ -377,9 +377,9 @@ export const faqCategories = [
           "No, your files are NEVER uploaded to our servers. All PDF processing happens entirely in your web browser using JavaScript. This means your sensitive documents never leave your device, ensuring complete privacy and security.",
       },
       {
-        question: "Is SimplyPDF safe to use for sensitive documents?",
+        question: "Is HEXAOS PDF safe to use for sensitive documents?",
         answer:
-          "Yes, SimplyPDF is extremely safe for sensitive documents. Since we process everything locally in your browser, confidential information like contracts, financial documents, or personal records never leave your computer. Your data stays on your device.",
+          "Yes, HEXAOS PDF is extremely safe for sensitive documents. Since we process everything locally in your browser, confidential information like contracts, financial documents, or personal records never leave your computer. Your data stays on your device.",
       },
       {
         question: "What happens to my files after processing?",
