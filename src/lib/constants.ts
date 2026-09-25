@@ -54,37 +54,37 @@ export const tools = [
   },
   {
     title: "Extraire des pages",
-    description: "Extract specific pages from PDF",
+    description: "Extrayez des pages précises d’un PDF",
     icon: Scissors,
     href: "/extract-pages",
   },
   {
     title: "Supprimer des pages",
-    description: "Remove unwanted pages from PDF",
+    description: "Supprimez les pages inutiles d’un PDF",
     icon: Trash2,
     href: "/delete-pages",
   },
   {
     title: "Réorganiser les pages",
-    description: "Change page order of PDF",
+    description: "Modifiez l’ordre des pages d’un PDF",
     icon: GripVertical,
     href: "/reorder-pages",
   },
   {
     title: "Pivoter PDF",
-    description: "Rotate pages any direction",
+    description: "Faites pivoter les pages dans la direction souhaitée",
     icon: RotateCw,
     href: "/rotate-pdf",
   },
   {
     title: "Dupliquer des pages",
-    description: "Copy pages within the same PDF",
+    description: "Dupliquez des pages dans un même PDF",
     icon: Copy,
     href: "/duplicate-pages",
   },
   {
     title: "Insérer des pages",
-    description: "Add pages from other PDFs",
+    description: "Ajoutez des pages provenant d’autres PDF",
     icon: PlusCircle,
     href: "/insert-pages",
   },
@@ -103,32 +103,32 @@ export const tools = [
   },
   {
     title: "Word vers PDF",
-    description: "Convert Word vers PDF",
+    description: "Convertissez un document Word en PDF",
     icon: FileUp,
     href: "/word-to-pdf",
     featured: true,
   },
   {
     title: "PDF vers Word",
-    description: "Convert PDF vers Word",
+    description: "Convertissez un PDF en document Word",
     icon: FileText,
     href: "/pdf-to-word",
   },
   {
     title: "Excel vers PDF",
-    description: "Convert Excel vers PDF",
+    description: "Convertissez un document Excel en PDF",
     icon: TableIcon,
     href: "/excel-to-pdf",
   },
   {
     title: "PDF vers Excel",
-    description: "Convert PDF vers Excel",
+    description: "Convertissez un PDF en Excel",
     icon: FileDown,
     href: "/pdf-to-excel",
   },
   {
     title: "PowerPoint vers PDF",
-    description: "Convert PPT to PDF",
+    description: "Convertissez un PowerPoint en PDF",
     icon: Presentation,
     href: "/powerpoint-to-pdf",
   },
@@ -146,7 +146,7 @@ export const tools = [
   },
   {
     title: "PDF vers HTML",
-    description: "Convert PDF vers HTML",
+    description: "Convertissez un PDF en HTML",
     icon: Globe,
     href: "/pdf-to-html",
   },
@@ -164,13 +164,13 @@ export const tools = [
   },
   {
     title: "EPUB vers PDF",
-    description: "Convert EPUB vers PDF",
+    description: "Convertissez un EPUB en PDF",
     icon: BookOpen,
     href: "/epub-to-pdf",
   },
   {
     title: "PDF vers EPUB",
-    description: "Convert PDF vers EPUB",
+    description: "Convertissez un PDF en EPUB",
     icon: BookOpen,
     href: "/pdf-to-epub",
   },
@@ -224,7 +224,7 @@ export const tools = [
   },
   {
     title: "Modifier les métadonnées",
-    description: "Modifier PDF properties",
+    description: "Modifiez les propriétés du PDF",
     icon: FileText,
     href: "/edit-metadata",
   },
@@ -283,12 +283,12 @@ export const contactMethods = [
 
 export const contactFaqs = [
   {
-    q: "How quickly will I get a response?",
-    a: "I typically respond within 24-48 hours for email inquiries. For urgent matters, Twitter/X DMs usually get faster responses.",
+    q: "Quel est le délai de réponse ?",
+    a: "Pour toute demande, nous vous invitons à utiliser le site HEXAOS ou les canaux de contact disponibles.",
   },
   {
-    q: "Can I request new features?",
-    a: "Absolutely! I love hearing feature suggestions. Send them via email or create an issue on GitHub.",
+    q: "Puis-je proposer de nouvelles fonctionnalités ?",
+    a: "Oui. Les suggestions de fonctionnalités sont les bienvenues via les canaux de contact du projet.",
   },
   {
     q: "Is HEXAOS PDF open source?",
@@ -302,27 +302,27 @@ export const faqCategories = [
     icon: HelpCircle,
     faqs: [
       {
-        question: "What is HEXAOS PDF?",
+        question: "Qu’est-ce que HEXAOS PDF ?",
         answer:
           "HEXAOS PDF is a free online tool that lets you work with PDF files directly in your browser. You can merge, split, compress, convert, rotate, and edit PDFs without uploading them to any server. All processing happens locally on your device for maximum privacy and speed.",
       },
       {
-        question: "Is HEXAOS PDF really free?",
+        question: "HEXAOS PDF est-il vraiment gratuit ?",
         answer:
           "Yes, HEXAOS PDF is completely free to use with no hidden costs. All features are available at no charge. We sustain the service through non-intrusive advertising. There are no premium tiers, file limits, or watermarks on your documents.",
       },
       {
-        question: "Do I need to create an account?",
+        question: "Dois-je créer un compte ?",
         answer:
           "No account is required to use any of our PDF tools. You can optionally sign in with Google to keep a history of your actions across sessions, but this is completely optional. All core features work without signing in.",
       },
       {
-        question: "What file size limits are there?",
+        question: "Quelles sont les limites de taille des fichiers ?",
         answer:
           "Since all processing happens in your browser, file limits depend on your device's available memory. Most modern devices can handle files up to 100MB without issues. For very large files (100MB+), performance may vary based on your device.",
       },
       {
-        question: "What browsers are supported?",
+        question: "Quels navigateurs sont pris en charge ?",
         answer:
           "HEXAOS PDF works on all modern browsers including Chrome, Firefox, Safari, Edge, and Opera. We recommend using the latest version of your browser for the best experience. Mobile browsers are also fully supported.",
       },
@@ -333,22 +333,22 @@ export const faqCategories = [
     icon: Shield,
     faqs: [
       {
-        question: "Are my files uploaded to your servers?",
+        question: "Mes fichiers sont-ils envoyés sur vos serveurs ?",
         answer:
           "No, your files are NEVER uploaded to our servers. All PDF processing happens entirely in your web browser using JavaScript. This means your sensitive documents never leave your device, ensuring complete privacy and security.",
       },
       {
-        question: "Is HEXAOS PDF safe to use for sensitive documents?",
+        question: "HEXAOS PDF peut-il être utilisé avec des documents sensibles ?",
         answer:
           "Yes, HEXAOS PDF is extremely safe for sensitive documents. Since we process everything locally in your browser, confidential information like contracts, financial documents, or personal records never leave your computer. Your data stays on your device.",
       },
       {
-        question: "What happens to my files after processing?",
+        question: "Que deviennent mes fichiers après le traitement ?",
         answer:
           "Your files exist only in your browser's memory while you're using the tool. When you close the tab or navigate away, all file data is automatically cleared. We don't store, cache, or have any access to your documents.",
       },
       {
-        question: "Do you use cookies?",
+        question: "Utilisez-vous des cookies ?",
         answer:
           "We use minimal cookies for essential functionality (like remembering theme preferences) and analytics to improve our service. We also use Google AdSense cookies for advertising. You can manage cookie preferences through your browser settings.",
       },
