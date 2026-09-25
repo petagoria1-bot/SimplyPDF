@@ -43,7 +43,7 @@ export function PDFPageThumbnail({
       {/* Thumbnail Container */}
       <div
         className={`relative cursor-pointer overflow-hidden rounded-xl border-2 transition-all ${
-          isSelected ? "border-black shadow-lg" : "border-gray-200 opacity-60"
+          isSelected ? "border-[#1268f4] shadow-lg shadow-[#1268f4]/10" : "border-gray-200 opacity-60"
         }`}
         onClick={onPreview}
       >
@@ -79,7 +79,7 @@ export function PDFPageThumbnail({
         </div>
 
         {/* Page Number Badge */}
-        <div className="absolute bottom-2 left-2 rounded bg-black px-2 py-1 text-xs font-bold text-white">
+        <div className="absolute bottom-2 left-2 rounded bg-[#07101f] px-2 py-1 text-xs font-bold text-white">
           {pageNumber}
         </div>
 
@@ -92,8 +92,8 @@ export function PDFPageThumbnail({
             }}
             className={`absolute top-2 right-2 flex h-6 w-6 items-center justify-center rounded-full border-2 transition-all ${
               isSelected
-                ? "border-black bg-black text-white"
-                : "border-gray-300 bg-white hover:border-black"
+                ? "border-[#1268f4] bg-[#1268f4] text-white"
+                : "border-gray-300 bg-white hover:border-[#1268f4]"
             }`}
           >
             {isSelected && <Check className="h-3 w-3" />}
