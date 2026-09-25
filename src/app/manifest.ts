@@ -5,14 +5,14 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "HEXAOS PDF",
     short_name: "HEXAOS PDF",
     description:
-      "The Easiest PDF Tool for merging, splitting, compressing, and converting PDFs.",
+      "Outils PDF gratuits, privés et rapides pour fusionner, diviser, compresser et convertir vos documents.",
     start_url: "/",
     display: "standalone",
-    background_color: "#ffffff",
-    theme_color: "#ffffff",
+    background_color: "#07101f",
+    theme_color: "#1268f4",
     icons: [
       {
-        src: "/hexaos-pdf-icon.svg",
+        src: "/hexaos-pdf-icon-512.svg",
         sizes: "512x512",
         type: "image/svg+xml",
       },
