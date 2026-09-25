@@ -32,199 +32,199 @@ import {
 
 export const tools = [
   {
-    title: "Merge PDF",
-    description: "Combine multiple PDFs into one",
+    title: "Fusionner PDF",
+    description: "Combinez plusieurs PDF en un seul",
     icon: Merge,
     href: "/merge-pdf",
     featured: true,
   },
   {
-    title: "Split PDF",
-    description: "Separate pages into files",
+    title: "Diviser PDF",
+    description: "Séparez les pages en plusieurs fichiers",
     icon: Split,
     href: "/split-pdf",
     featured: true,
   },
   {
-    title: "Compress PDF",
-    description: "Reduce file size instantly",
+    title: "Compresser PDF",
+    description: "Réduisez la taille de vos PDF",
     icon: Minimize2,
     href: "/compress-pdf",
     featured: true,
   },
   {
-    title: "Extract Pages",
+    title: "Extraire des pages",
     description: "Extract specific pages from PDF",
     icon: Scissors,
     href: "/extract-pages",
   },
   {
-    title: "Delete Pages",
+    title: "Supprimer des pages",
     description: "Remove unwanted pages from PDF",
     icon: Trash2,
     href: "/delete-pages",
   },
   {
-    title: "Reorder Pages",
+    title: "Réorganiser les pages",
     description: "Change page order of PDF",
     icon: GripVertical,
     href: "/reorder-pages",
   },
   {
-    title: "Rotate PDF",
+    title: "Pivoter PDF",
     description: "Rotate pages any direction",
     icon: RotateCw,
     href: "/rotate-pdf",
   },
   {
-    title: "Duplicate Pages",
+    title: "Dupliquer des pages",
     description: "Copy pages within the same PDF",
     icon: Copy,
     href: "/duplicate-pages",
   },
   {
-    title: "Insert Pages",
+    title: "Insérer des pages",
     description: "Add pages from other PDFs",
     icon: PlusCircle,
     href: "/insert-pages",
   },
   {
     title: "JPG to PDF",
-    description: "Convert images to PDF",
+    description: "Convertissez vos images en PDF",
     icon: ImagePlus,
     href: "/jpg-to-pdf",
     featured: true,
   },
   {
-    title: "PDF to JPG",
-    description: "Extract images from PDF",
+    title: "PDF vers JPG",
+    description: "Extrayez les images d’un PDF",
     icon: FileImage,
     href: "/pdf-to-jpg",
   },
   {
-    title: "Word to PDF",
-    description: "Convert Word to PDF",
+    title: "Word vers PDF",
+    description: "Convert Word vers PDF",
     icon: FileUp,
     href: "/word-to-pdf",
     featured: true,
   },
   {
-    title: "PDF to Word",
-    description: "Convert PDF to Word",
+    title: "PDF vers Word",
+    description: "Convert PDF vers Word",
     icon: FileText,
     href: "/pdf-to-word",
   },
   {
-    title: "Excel to PDF",
-    description: "Convert Excel to PDF",
+    title: "Excel vers PDF",
+    description: "Convert Excel vers PDF",
     icon: TableIcon,
     href: "/excel-to-pdf",
   },
   {
-    title: "PDF to Excel",
-    description: "Convert PDF to Excel",
+    title: "PDF vers Excel",
+    description: "Convert PDF vers Excel",
     icon: FileDown,
     href: "/pdf-to-excel",
   },
   {
-    title: "PowerPoint to PDF",
+    title: "PowerPoint vers PDF",
     description: "Convert PPT to PDF",
     icon: Presentation,
     href: "/powerpoint-to-pdf",
   },
   {
-    title: "PDF to PowerPoint",
-    description: "Convert PDF to PPT",
+    title: "PDF vers PowerPoint",
+    description: "Convertissez un PDF en PowerPoint",
     icon: Presentation,
     href: "/pdf-to-powerpoint",
   },
   {
-    title: "HTML to PDF",
-    description: "Convert webpage to PDF",
+    title: "Web vers PDF",
+    description: "Transformez une page web en PDF",
     icon: Globe,
     href: "/html-to-pdf",
   },
   {
-    title: "PDF to HTML",
-    description: "Convert PDF to HTML",
+    title: "PDF vers HTML",
+    description: "Convert PDF vers HTML",
     icon: Globe,
     href: "/pdf-to-html",
   },
   {
-    title: "Text to PDF",
-    description: "Convert text to PDF",
+    title: "Texte vers PDF",
+    description: "Convertissez du texte en PDF",
     icon: FileText,
     href: "/text-to-pdf",
   },
   {
-    title: "PDF to Text",
-    description: "Extract text from PDF",
+    title: "PDF vers texte",
+    description: "Extrayez le texte d’un PDF",
     icon: FileText,
     href: "/pdf-to-text",
   },
   {
-    title: "EPUB to PDF",
-    description: "Convert EPUB to PDF",
+    title: "EPUB vers PDF",
+    description: "Convert EPUB vers PDF",
     icon: BookOpen,
     href: "/epub-to-pdf",
   },
   {
-    title: "PDF to EPUB",
-    description: "Convert PDF to EPUB",
+    title: "PDF vers EPUB",
+    description: "Convert PDF vers EPUB",
     icon: BookOpen,
     href: "/pdf-to-epub",
   },
   {
-    title: "Unlock PDF",
-    description: "Remove PDF passwords",
+    title: "Déverrouiller PDF",
+    description: "Supprimez les restrictions d’un PDF",
     icon: Unlock,
     href: "/unlock-pdf",
   },
   {
-    title: "Protect PDF",
-    description: "Secure with password",
+    title: "Protéger PDF",
+    description: "Protégez avec un mot de passe",
     icon: Lock,
     href: "/protect-pdf",
   },
   {
-    title: "Organize PDF",
-    description: "Reorder & delete pages",
+    title: "Organiser PDF",
+    description: "Réorganisez et supprimez des pages",
     icon: Layers,
     href: "/organize-pdf",
   },
   {
-    title: "Watermark",
-    description: "Add text watermarks",
+    title: "Filigrane",
+    description: "Ajoutez un filigrane texte",
     icon: Stamp,
     href: "/watermark-pdf",
   },
   {
-    title: "Sign PDF",
-    description: "Add digital signature",
+    title: "Signer PDF",
+    description: "Ajoutez une signature",
     icon: FileSignature,
     href: "/sign-pdf",
   },
   {
-    title: "Edit PDF",
-    description: "Modify PDF content",
+    title: "Modifier PDF",
+    description: "Modifiez le contenu du PDF",
     icon: Type,
     href: "/edit-pdf",
   },
   {
     title: "OCR PDF",
-    description: "Extract text from scans",
+    description: "Extrayez le texte des documents numérisés",
     icon: ScanLine,
     href: "/ocr-pdf",
   },
   {
-    title: "Repair PDF",
-    description: "Fix corrupted PDF files",
+    title: "Réparer PDF",
+    description: "Réparez certains PDF endommagés",
     icon: Wrench,
     href: "/repair-pdf",
   },
   {
-    title: "Edit Metadata",
-    description: "Edit PDF properties",
+    title: "Modifier les métadonnées",
+    description: "Modifier PDF properties",
     icon: FileText,
     href: "/edit-metadata",
   },
@@ -233,26 +233,26 @@ export const tools = [
 export const features = [
   {
     icon: Zap,
-    title: "Lightning Fast",
-    description: "Process files in seconds with our optimized engine",
+    title: "Ultra rapide",
+    description: "Traitez vos fichiers rapidement grâce à un moteur optimisé",
   },
   {
     icon: Shield,
-    title: "100% Secure",
-    description: "Files processed locally, never uploaded to servers",
+    title: "100 % sécurisé",
+    description: "Les fichiers sont traités localement dans votre navigateur",
   },
   {
     icon: Globe,
-    title: "Works Anywhere",
-    description: "Use on any device, any browser, anytime",
+    title: "Partout, sur tous vos appareils",
+    description: "Accessible depuis vos appareils et navigateurs modernes",
   },
 ];
 
 export const stats = [
-  { value: "Secure", label: "Local Processing" },
-  { value: "Fast", label: "Optimized Engine" },
-  { value: "0", label: "Data Stored" },
-  { value: "Free", label: "Accessibility" },
+  { value: "Secure", label: "Traitement local" },
+  { value: "Fast", label: "Moteur optimisé" },
+  { value: "0", label: "Données stockées" },
+  { value: "Free", label: "Accès gratuit" },
 ];
 
 export const aboutSocials = [
@@ -298,7 +298,7 @@ export const contactFaqs = [
 
 export const faqCategories = [
   {
-    title: "General Questions",
+    title: "Questions générales",
     icon: HelpCircle,
     faqs: [
       {
@@ -329,7 +329,7 @@ export const faqCategories = [
     ],
   },
   {
-    title: "Privacy & Security",
+    title: "Confidentialité et sécurité",
     icon: Shield,
     faqs: [
       {
@@ -355,18 +355,18 @@ export const faqCategories = [
     ],
   },
   {
-    title: "PDF Tools",
+    title: "Outils PDF",
     icon: FileText,
     faqs: [
       {
         question: "How do I merge multiple PDFs?",
         answer:
-          "Go to the Merge PDF tool, drag and drop your PDF files or click to browse and select them. You can reorder files by dragging them into your preferred order. You can also expand each file to see pages, rotate or remove specific pages. When ready, click 'Merge & Download' to combine them into a single PDF.",
+          "Go to the Fusionner PDF tool, drag and drop your PDF files or click to browse and select them. You can reorder files by dragging them into your preferred order. You can also expand each file to see pages, rotate or remove specific pages. When ready, click 'Merge & Download' to combine them into a single PDF.",
       },
       {
         question: "How do I split a PDF into multiple files?",
         answer:
-          "Use the Split PDF tool. Upload your PDF, then choose how to split: by specific page ranges (e.g., '1-5, 8-10'), extract all pages as separate files, or select specific pages visually. Click 'Split PDF' to process and download your split files.",
+          "Use the Diviser PDF tool. Upload your PDF, then choose how to split: by specific page ranges (e.g., '1-5, 8-10'), extract all pages as separate files, or select specific pages visually. Click 'Diviser PDF' to process and download your split files.",
       },
       {
         question: "How does PDF compression work?",
@@ -381,7 +381,7 @@ export const faqCategories = [
       {
         question: "How do I add a password to my PDF?",
         answer:
-          "Use the Protect PDF tool. Upload your PDF, enter your desired password, and optionally set permissions (like preventing printing or copying). The tool will encrypt your PDF with industry-standard AES encryption.",
+          "Use the Protéger PDF tool. Upload your PDF, enter your desired password, and optionally set permissions (like preventing printing or copying). The tool will encrypt your PDF with industry-standard AES encryption.",
       },
       {
         question: "What image formats can I convert to PDF?",
@@ -391,7 +391,7 @@ export const faqCategories = [
     ],
   },
   {
-    title: "Troubleshooting",
+    title: "Dépannage",
     icon: Zap,
     faqs: [
       {
