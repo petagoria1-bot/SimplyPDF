@@ -1,19 +1,14 @@
-import { Star } from "lucide-react";
-
 export const Testimonials = () => {
   return (
-    <section className="border-t border-gray-100 py-16">
+    <section className="border-t border-gray-200/70 py-12">
       <div className="container mx-auto px-4">
-        <div className="scroll-reveal flex flex-wrap items-center justify-center gap-8">
-          <div className="flex items-center gap-1">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 fill-[#1268f4] stroke-[#1268f4]" />
-            ))}
-          </div>
-          <div className="text-gray-500">
-            Loved by <span className="font-semibold text-black">10,000+</span>{" "}
-            users worldwide
-          </div>
+        <div className="mx-auto flex max-w-3xl flex-col items-center justify-center gap-2 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#1268f4]">
+            HEXAOS PDF
+          </p>
+          <p className="text-base text-gray-500">
+            Une suite PDF pensée pour la simplicité, la rapidité et la confidentialité.
+          </p>
         </div>
       </div>
     </section>
