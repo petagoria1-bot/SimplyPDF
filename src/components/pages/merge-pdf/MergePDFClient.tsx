@@ -10,7 +10,7 @@ import {
   Upload,
   File,
   X,
-  Télécharger,
+  Download as Télécharger,
   CheckCircle2,
   RefreshCw,
   AlertCircle,
@@ -20,15 +20,15 @@ import {
   Eye,
   RotateCw,
   Combine,
-  Annuler,
-  Rétablir,
+  Undo2 as Annuler,
+  Redo2 as Rétablir,
   ArrowUpAZ,
   ArrowDownZA,
   ArrowUpDown,
 } from "lucide-react";
 import { PDFDocument, degrees } from "pdf-lib";
 import { uint8ArrayToBlob } from "@/lib/pdf-utils";
-import { PDFAperçuModal } from "@/components/pdf/PDFAperçuModal";
+import { PDFPreviewModal } from "@/components/pdf/PDFPreviewModal";
 import { useHistory } from "@/context/HistoryContext";
 import Image from "next/image";
 import {
@@ -991,7 +991,7 @@ export function MergePDFClient() {
         />
       </div>
 
-      <PDFAperçuModal
+      <PDFPreviewModal
         isOpen={previewOpen}
         onClose={() => setAperçuOpen(false)}
         images={previewImages}
