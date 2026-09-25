@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Separate PDF Pages",
     "Extract PDF Pages",
     "Free PDF Splitter",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Split PDF Online | #1 Free PDF Splitting Tool",
     description:
       "Separate or extract PDF pages in seconds. Fast, free, and secure.",
-    url: "https://simplypdf.vercel.app/split-pdf",
+    url: "https://hexaos.fr/split-pdf",
   },
 };
 
