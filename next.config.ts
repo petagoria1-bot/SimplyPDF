@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "/pdf";
+
 const nextConfig: NextConfig = {
+  basePath,
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -12,7 +15,6 @@ const nextConfig: NextConfig = {
     }
     return config;
   },
-  // Silence Turbopack error and provide module aliases
   turbopack: {
     resolveAlias: {
       fs: "./src/lib/empty-module.ts",
