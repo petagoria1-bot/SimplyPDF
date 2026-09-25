@@ -35,19 +35,19 @@ export const AnimatedBackground = () => (
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.4 }}
       transition={{ duration: 1 }}
-      className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-linear-to-bl from-gray-100 to-transparent blur-3xl"
+      className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-linear-to-bl from-cyan-50 to-transparent blur-3xl"
     />
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.25 }}
       transition={{ duration: 1, delay: 0.3 }}
-      className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-linear-to-tr from-gray-50 to-transparent blur-3xl"
+      className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-linear-to-tr from-blue-50 to-transparent blur-3xl"
     />
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.15 }}
       transition={{ duration: 1, delay: 0.5 }}
-      className="bg-gradient-radial absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full from-gray-100/50 to-transparent blur-3xl"
+      className="bg-gradient-radial absolute top-1/2 left-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full from-cyan-50/50 to-transparent blur-3xl"
     />
   </div>
 );
@@ -56,7 +56,7 @@ export const AnimatedBackground = () => (
 export const FloatingDecorations = () => (
   <>
     <FloatingShape
-      className="absolute top-32 right-[10%] h-20 w-20 rounded-full border-2 border-gray-200 opacity-40"
+      className="absolute top-32 right-[10%] h-20 w-20 rounded-full border-2 border-blue-100 opacity-40"
       delay={0}
     />
     <FloatingShape
@@ -68,7 +68,7 @@ export const FloatingDecorations = () => (
       delay={0.4}
     />
     <FloatingShape
-      className="absolute bottom-48 left-[10%] h-24 w-24 -rotate-6 rounded-3xl border border-gray-100 opacity-30"
+      className="absolute bottom-48 left-[10%] h-24 w-24 -rotate-6 rounded-3xl border border-blue-100 opacity-30"
       delay={0.6}
     />
   </>
@@ -112,7 +112,7 @@ export function ToolHeader({ icon, title, description }: ToolHeaderProps) {
     >
       {icon && (
         <motion.div
-          className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-3xl bg-linear-to-br from-gray-100 to-gray-50 shadow-lg shadow-gray-200/50"
+          className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-3xl bg-linear-to-br from-cyan-50 to-blue-50 text-blue-600 shadow-lg shadow-blue-100/50"
           whileHover={{ scale: 1.1, rotate: 5 }}
           transition={{ type: "spring", stiffness: 400 }}
         >
@@ -152,7 +152,7 @@ export function ToolCard({ children, className = "" }: ToolCardProps) {
       className={`relative ${className}`}
     >
       <div className="absolute -inset-1 rounded-4xl bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 opacity-50 blur-xl" />
-      <div className="relative rounded-3xl border border-gray-200/80 bg-white p-8 shadow-2xl shadow-gray-200/50 md:p-10">
+      <div className="relative rounded-3xl border border-blue-100/80 bg-white p-8 shadow-2xl shadow-blue-100/50 md:p-10">
         {children}
       </div>
     </motion.div>
@@ -164,11 +164,11 @@ export function FeatureGrid() {
   const features = [
     {
       icon: "🔒",
-      label: "100% Private",
-      desc: "Files never leave your device",
+      label: "100 % privé",
+      desc: "Vos fichiers restent sur votre appareil",
     },
-    { icon: "⚡", label: "Lightning Fast", desc: "Instant local processing" },
-    { icon: "✨", label: "Completely Free", desc: "No hidden fees or limits" },
+    { icon: "⚡", label: "Ultra rapide", desc: "Traitement local instantané" },
+    { icon: "✨", label: "Entièrement gratuit", desc: "Sans frais ni limites cachées" },
   ];
 
   return (
@@ -181,7 +181,7 @@ export function FeatureGrid() {
       {features.map((feature) => (
         <motion.div
           key={feature.label}
-          className="group relative rounded-2xl border border-gray-100 bg-linear-to-b from-gray-50 to-white p-6 transition-all duration-500 hover:border-gray-200 hover:shadow-xl hover:shadow-gray-100/50"
+          className="group relative rounded-2xl border border-blue-100 bg-linear-to-b from-blue-50 to-white p-6 transition-all duration-500 hover:border-blue-100 hover:shadow-xl hover:shadow-blue-100/50"
           whileHover={{ y: -5 }}
         >
           <span className="mb-3 block text-2xl">{feature.icon}</span>
@@ -209,7 +209,7 @@ export function ProcessingState({
   description,
   progress,
 }: ProcessingStateProps) {
-  const displayTitle = title || message || "Processing...";
+  const displayTitle = title || message || "Traitement en cours…";
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -233,7 +233,7 @@ export function ProcessingState({
         <>
           <div className="mt-4 h-2 w-64 overflow-hidden rounded-full bg-gray-200">
             <motion.div
-              className="h-full bg-black"
+              className="h-full" style={{ background: "linear-gradient(90deg,#12d9f4,#1268f4)" }}
               initial={{ width: 0 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
@@ -247,7 +247,7 @@ export function ProcessingState({
         {[0, 1, 2].map((i) => (
           <motion.div
             key={i}
-            className="h-2 w-2 rounded-full bg-black"
+            className="h-2 w-2 rounded-full bg-blue-500"
             animate={{ scale: [1, 1.5, 1], opacity: [0.3, 1, 0.3] }}
             transition={{ duration: 1, repeat: Infinity, delay: i * 0.2 }}
           />
