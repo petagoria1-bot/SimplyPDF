@@ -361,32 +361,32 @@ export const faqCategories = [
       {
         question: "Comment fusionner plusieurs PDF ?",
         answer:
-          "Go to the Fusionner PDF tool, drag and drop your PDF files or click to browse and select them. You can reorder files by dragging them into your preferred order. You can also expand each file to see pages, rotate or remove specific pages. When ready, click 'Merge & Download' to combine them into a single PDF.",
+          "Ouvrez l’outil Fusionner PDF, glissez-déposez vos fichiers ou sélectionnez-les depuis votre appareil. Réorganisez-les dans l’ordre souhaité. Vous pouvez également afficher les pages, les faire pivoter ou en supprimer certaines. Lorsque tout est prêt, cliquez sur « Fusionner et télécharger » pour créer un seul PDF.",
       },
       {
         question: "Comment diviser un PDF en plusieurs fichiers ?",
         answer:
-          "Use the Diviser PDF tool. Upload your PDF, then choose how to split: by specific page ranges (e.g., '1-5, 8-10'), extract all pages as separate files, or select specific pages visually. Click 'Diviser PDF' to process and download your split files.",
+          "Utilisez l’outil Diviser PDF. Importez votre PDF, puis choisissez le mode de division : plages de pages précises (par exemple « 1-5, 8-10 »), toutes les pages dans des fichiers séparés ou sélection visuelle de pages. Cliquez sur « Diviser PDF » pour lancer le traitement et télécharger les fichiers.",
       },
       {
         question: "Comment fonctionne la compression PDF ?",
         answer:
-          "Our compression tool optimizes your PDF by removing redundant data, optimizing images, and streamlining the file structure. The compression maintains document quality while reducing file size, typically achieving 30-70% size reduction depending on the original file's content.",
+          "L’outil de compression optimise votre PDF en réduisant les données redondantes et en optimisant les images et la structure du document. Le niveau de réduction dépend du contenu et de la structure du fichier d’origine ; le résultat peut donc varier.",
       },
       {
         question: "Puis-je convertir un PDF numérisé en texte exploitable ?",
         answer:
-          "Yes! Our OCR (Optical Character Recognition) tool can extract text from scanned documents and image-based PDFs. Upload your scanned PDF, and our tool will process it to extract readable, searchable text. The accuracy depends on the scan quality.",
+          "Oui. L’outil OCR (reconnaissance optique de caractères) peut extraire du texte depuis des documents numérisés et des PDF constitués d’images. Importez votre document ; le texte extrait dépend notamment de la qualité du scan.",
       },
       {
         question: "Comment ajouter un mot de passe à mon PDF ?",
         answer:
-          "Use the Protéger PDF tool. Upload your PDF, enter your desired password, and optionally set permissions (like preventing printing or copying). The tool will encrypt your PDF with industry-standard AES encryption.",
+          "Utilisez l’outil Protéger PDF. Importez votre document, saisissez le mot de passe souhaité et, si disponible, configurez les autorisations comme l’impression ou la copie. Le niveau de protection dépend des options prises en charge par le PDF.",
       },
       {
         question: "Quels formats d’image puis-je convertir en PDF ?",
         answer:
-          "Our JPG to PDF tool supports JPG, JPEG, PNG, and other common image formats. You can upload multiple images and combine them into a single PDF, or convert each image to its own PDF file.",
+          "L’outil JPG vers PDF prend en charge les formats d’image courants comme JPG, JPEG et PNG. Vous pouvez importer plusieurs images pour les réunir dans un seul PDF, ou convertir chaque image séparément.",
       },
     ],
   },
@@ -397,27 +397,27 @@ export const faqCategories = [
       {
         question: "Pourquoi le traitement est-il long ?",
         answer:
-          "Processing time depends on your file size and your device's capabilities. Large PDFs with many pages or high-resolution images take longer. If processing seems stuck, try refreshing the page and using a smaller file, or try on a device with more RAM.",
+          "La durée du traitement dépend de la taille du fichier et des capacités de votre appareil. Les PDF volumineux ou contenant des images haute résolution peuvent demander davantage de temps. Si le traitement semble bloqué, rechargez la page et essayez avec un fichier plus léger.",
       },
       {
         question: "Pourquoi ne puis-je pas importer mon PDF ?",
         answer:
-          "Make sure your file has a .pdf extension and is a valid PDF document. Some PDFs may be corrupted or use unsupported features. If the file opens in other PDF readers, try saving it as a new PDF and uploading the new copy.",
+          "Vérifiez que votre fichier possède l’extension .pdf et qu’il s’agit bien d’un document PDF valide. Certains fichiers peuvent être endommagés ou utiliser des fonctionnalités non prises en charge. S’il s’ouvre dans un autre lecteur PDF, essayez de l’enregistrer à nouveau puis d’importer la nouvelle copie.",
       },
       {
         question: "Le PDF obtenu est différent de l’original",
         answer:
-          "PDF processing can sometimes affect formatting, especially for complex documents with special fonts or interactive elements. For best results, use source PDFs that are print-ready. If you're having issues, try using a different tool or contact us.",
+          "Certaines opérations peuvent modifier la mise en page, notamment avec des documents complexes, des polices particulières ou des éléments interactifs. Pour de meilleurs résultats, utilisez un PDF correctement finalisé. Si le problème persiste, essayez un autre outil.",
       },
       {
         question: "Mon PDF protégé ne se déverrouille pas",
         answer:
-          "Our unlock tool can only remove restrictions (like no-printing) from PDFs. If the PDF requires a password to open (fully encrypted), you'll need to enter the correct password. We cannot bypass password protection without the password.",
+          "L’outil de déverrouillage peut supprimer certaines restrictions d’utilisation d’un PDF. Si le document exige un mot de passe pour être ouvert et qu’il est chiffré, vous devez fournir le mot de passe correct. La protection par mot de passe ne peut pas être contournée sans celui-ci.",
       },
       {
         question: "Le téléchargement n’a pas démarré",
         answer:
-          "Check if your browser is blocking downloads or pop-ups. Try using a different browser. If the issue persists, make sure you have enough disk space and try right-clicking the download button and selecting 'Save As'.",
+          "Vérifiez que votre navigateur n’empêche pas les téléchargements ou les fenêtres nécessaires. Essayez également un autre navigateur. Si le problème persiste, vérifiez l’espace disque disponible et relancez le téléchargement.",
       },
     ],
   },
