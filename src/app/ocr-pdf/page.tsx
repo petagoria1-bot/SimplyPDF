@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Optical Character Recognition",
     "Searchable PDF",
     "Extract Text from PDF",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "OCR PDF Online | #1 Free OCR Tool",
     description:
       "Convert scanned PDFs into searchable documents in seconds. Fast and private.",
-    url: "https://simplypdf.vercel.app/ocr-pdf",
+    url: "https://hexaos.fr/ocr-pdf",
   },
 };
 
