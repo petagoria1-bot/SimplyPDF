@@ -33,6 +33,7 @@ export function FileUploader({
     (e: React.DragEvent) => {
       e.preventDefault();
       const droppedFiles = Array.from(e.dataTransfer.files);
+      if (droppedFiles.length === 0) return;
       if (multiple) {
         onFilesChange([...files, ...droppedFiles]);
       } else {
@@ -44,6 +45,7 @@ export function FileUploader({
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFiles = Array.from(e.target.files || []);
+    if (selectedFiles.length === 0) return;
     if (multiple) {
       onFilesChange([...files, ...selectedFiles]);
     } else {
@@ -72,7 +74,7 @@ export function FileUploader({
             <Reorder.Item
               key={file.name + index}
               value={file}
-              className="group flex cursor-grab items-center gap-3 rounded-xl bg-gray-50 p-4 transition-colors hover:bg-gray-100 active:cursor-grabbing"
+              className="group flex cursor-grab items-center gap-3 rounded-xl border border-gray-200/80 bg-white p-4 shadow-sm transition-all hover:border-blue-200 hover:shadow-md active:cursor-grabbing"
             >
               <GripVertical className="h-4 w-4 text-gray-400" />
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#07101f] text-white">
@@ -103,7 +105,7 @@ export function FileUploader({
             key={file.name + index}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="group flex items-center gap-3 rounded-xl bg-gray-50 p-4 transition-colors hover:bg-gray-100"
+            className="group flex items-center gap-3 rounded-xl border border-gray-200/80 bg-white p-4 shadow-sm transition-all hover:border-blue-200 hover:shadow-md"
           >
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#07101f] text-white">
               <File className="h-5 w-5" />
@@ -143,15 +145,15 @@ export function FileUploader({
           htmlFor="file-upload"
           onDragOver={(e) => e.preventDefault()}
           onDrop={handleDrop}
-          className="group flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-200 bg-gray-50/60 px-5 py-10 transition-all duration-300 hover:border-[#1268f4] hover:bg-[#1268f4]/5"
+          className="group flex cursor-pointer flex-col items-center justify-center rounded-[1.25rem] border-2 border-dashed border-[#b9cff0] bg-gradient-to-b from-[#f8fbff] to-white px-5 py-10 transition-all duration-300 hover:border-[#1268f4] hover:bg-[#1268f4]/5 hover:shadow-[0_12px_35px_rgba(18,104,244,.08)] md:py-12"
         >
-          <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-[#1268f4] shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-[#1268f4] group-hover:text-white">
+          <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#1268f4]/10 text-[#1268f4] shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-[#1268f4] group-hover:text-white">
             <UploadCloud className="h-8 w-8" />
           </div>
-          <p className="mb-2 text-lg font-semibold">
+          <p className="mb-2 text-center text-base font-semibold text-[#07101f] md:text-lg">
             Glissez-déposez votre document ici
           </p>
-          <p className="text-sm text-gray-400">
+          <p className="text-center text-sm text-gray-500">
             {multiple ? "Sélectionnez un ou plusieurs fichiers depuis votre appareil" : "Sélectionnez un fichier depuis votre appareil"}
           </p>
         </label>
