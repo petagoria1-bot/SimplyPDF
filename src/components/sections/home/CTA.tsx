@@ -13,15 +13,11 @@ export const CTA = () => {
               Vous avez besoin d’un outil spécifique ?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg font-medium text-gray-500">
-              If there&apos;s a PDF feature you need that&apos;s missing,
-              I&apos;d love to build it for you. Request new tools and features
-              at{" "}
-              <span className="font-bold text-black">
-                hexaos.fr
-              </span>
+              S’il vous manque une fonctionnalité PDF, dites-nous laquelle. Vos idées peuvent nous aider à faire évoluer HEXAOS PDF. Retrouvez HEXAOS sur{" "}
+              <span className="font-bold text-[#1268f4]">hexaos.fr</span>
             </p>
             <a
-              href="mailto:hexaos.fr?subject=Demande%20d%27outil%20-%20HEXAOS%20PDF"
+              href="https://hexaos.fr" target="_blank" rel="noopener noreferrer"
               className="btn-primary inline-flex items-center gap-2 px-12 py-5 text-lg"
             >
               Proposer un outil
