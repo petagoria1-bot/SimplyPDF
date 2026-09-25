@@ -41,7 +41,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="group mb-6 flex items-center gap-3">
               <div className="relative h-10 w-40 transition-transform group-hover:scale-[1.02]">
-                <Image src="/hexaos-pdf-logo.svg" alt="HEXAOS PDF" fill className="object-contain object-left" />
+                <Image src="/pdf/hexaos-pdf-logo.svg" alt="HEXAOS PDF" fill className="object-contain object-left" />
               </div>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-gray-400">
