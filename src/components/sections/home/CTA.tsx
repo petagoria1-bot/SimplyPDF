@@ -10,21 +10,21 @@ export const CTA = () => {
 
           <div className="relative z-10">
             <h2 className="mb-4 text-3xl font-black tracking-tight md:text-5xl">
-              Need a specific tool?
+              Vous avez besoin d’un outil spécifique ?
             </h2>
             <p className="mx-auto mb-8 max-w-2xl text-lg font-medium text-gray-500">
               If there&apos;s a PDF feature you need that&apos;s missing,
               I&apos;d love to build it for you. Request new tools and features
               at{" "}
               <span className="font-bold text-black">
-                arshverma.dev@gmail.com
+                hexaos.fr
               </span>
             </p>
             <a
-              href="mailto:arshverma.dev@gmail.com?subject=Tool%20Request%20-%20SimplyPDF"
+              href="mailto:hexaos.fr?subject=Demande%20d%27outil%20-%20HEXAOS%20PDF"
               className="btn-primary inline-flex items-center gap-2 px-12 py-5 text-lg"
             >
-              Request a Tool
+              Proposer un outil
               <ArrowRight className="h-5 w-5" />
             </a>
           </div>
