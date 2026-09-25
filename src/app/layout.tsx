@@ -29,7 +29,7 @@ const alexBrush = Alex_Brush({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr"
+    process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr/pdf"
   ),
   title: {
     default: "HEXAOS PDF | Outils PDF gratuits, privés et rapides",
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/hexaos-pdf-icon-512.svg",
+    shortcut: "/pdf/favicon.svg",
+    apple: "/pdf/hexaos-pdf-icon-512.svg",
   },
   openGraph: {
     title: "HEXAOS PDF | Outils PDF gratuits et privés",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/pdf/og-image.svg",
         width: 1200,
         height: 630,
         alt: "HEXAOS PDF — Outils PDF gratuits et privés",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: "HEXAOS PDF | Outils PDF gratuits et privés",
     description:
       "Fusionnez, divisez, compressez et convertissez vos PDF directement dans votre navigateur.",
-    images: ["/og-image.svg"],
+    images: ["/pdf/og-image.svg"],
   },
   other: {
     "google-adsense-account":
