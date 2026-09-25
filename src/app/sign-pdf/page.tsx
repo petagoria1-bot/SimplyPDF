@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "Electronic Signature",
     "PDF Signer",
     "Free PDF Sign",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Sign PDF Online | #1 Free PDF Signing Tool",
     description:
       "The easiest way to sign your PDF documents electronically. Fast, free, and secure.",
-    url: "https://simplypdf.vercel.app/sign-pdf",
+    url: "https://hexaos.fr/sign-pdf",
   },
 };
 
