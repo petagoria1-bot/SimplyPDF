@@ -1,16 +1,16 @@
 ---
 name: 🐛 Bug Report
-about: Create a report to help us improve SimplyPDF
+about: Décrivez un problème pour nous aider à améliorer HEXAOS PDF
 title: "[BUG] "
 labels: bug
 assignees: ""
 ---
 
-## 🐛 Describe the Bug
+## 🐛 Décrire le problème
 
 <!-- A clear and concise description of what the bug is. -->
 
-## 🔄 Steps to Reproduce
+## 🔄 Étapes pour reproduire
 
 <!-- Steps to reproduce the behavior: -->
 
@@ -19,15 +19,15 @@ assignees: ""
 3. Upload file '...'
 4. See error
 
-## 📸 Expected Behavior
+## 📸 Comportement attendu
 
 <!-- A clear and concise description of what you expected to happen. -->
 
-## 🖼️ Screenshots / Video
+## 🖼️ Captures d’écran / vidéo
 
 <!-- If applicable, add screenshots to help explain your problem. -->
 
-## 💻 Environment
+## 💻 Environnement
 
 <!-- Please complete the following information -->
 
@@ -35,7 +35,7 @@ assignees: ""
 - **Browser:** [e.g. Chrome 121, Safari 17]
 - **Device:** [e.g. Desktop, iPhone 15]
 
-## 📜 Console Logs
+## 📜 Journaux de console
 
 <!-- If applicable, paste any errors from the browser console (F12 > Console) here. -->
 
@@ -43,6 +43,6 @@ assignees: ""
 Error text here...
 ```
 
-## ℹ️ Additional Context
+## ℹ️ Contexte supplémentaire
 
 <!-- Add any other context about the problem here. -->
