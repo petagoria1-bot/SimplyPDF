@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Fix PDF",
     "Recover PDF",
     "Broken PDF Fixer",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Repair PDF Online | #1 Free PDF Recovery Tool",
     description:
       "Restore your corrupted PDF files in seconds. Fast and private.",
-    url: "https://simplypdf.vercel.app/repair-pdf",
+    url: "https://hexaos.fr/repair-pdf",
   },
 };
 
