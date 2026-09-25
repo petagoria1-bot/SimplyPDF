@@ -662,27 +662,27 @@ body {
 /* Enhanced drop zone */
 .drop-zone {
   @apply relative flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed p-12 py-20 transition-all duration-500;
-  @apply border-gray-200 bg-linear-to-b from-gray-50/50 to-white hover:border-gray-400;
+  @apply border-blue-200 bg-linear-to-b from-blue-50/50 to-white hover:border-blue-400;
 }
 
 .drop-zone:hover {
-  @apply bg-linear-to-b from-gray-100/50 to-gray-50/50;
+  @apply bg-linear-to-b from-cyan-50/70 to-blue-50/70;
   transform: scale(1.01);
 }
 
 .drop-zone.active {
-  @apply border-black bg-gray-50;
+  @apply border-blue-500 bg-blue-50;
   transform: scale(1.02);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(18, 104, 244, 0.12);
 }
 
 /* File item card */
 .file-item {
-  @apply flex items-center gap-4 rounded-xl border border-gray-100 bg-linear-to-r from-gray-50 to-white p-4 transition-all duration-300;
+  @apply flex items-center gap-4 rounded-xl border border-blue-100 bg-linear-to-r from-blue-50 to-white p-4 transition-all duration-300;
 }
 
 .file-item:hover {
-  @apply border-gray-200 shadow-lg shadow-gray-100/50;
+  @apply border-blue-200 shadow-lg shadow-blue-100/50;
   transform: translateY(-2px);
 }
 
