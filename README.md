@@ -37,27 +37,27 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## ✨ About The Project
+## ✨ À propos du projet
 
 **HEXAOS PDF** is a premium, high-performance web application designed to redefine how you interact with PDFs. Built with a hyper-polished, responsive aesthetic, it offers a seamless, desktop-class experience for editing, converting, and managing documents directly in your browser.
 
-Unlike other tools that upload your data to remote servers, **HEXAOS PDF operates entirely client-side**. Your sensitive documents never leave your device, ensuring maximum privacy and security without compromising on power or features.
+Le traitement des documents est conçu pour s’effectuer localement dans le navigateur, afin de limiter la transmission de vos fichiers vers un serveur distant.
 
-### 💎 Key Features
+### 💎 Fonctionnalités principales
 
-- **100% Client-Side Privacy**: Powered by WebAssembly, your files are processed locally. No uploads, ever.
-- **Hyper-Premium UI**: A stunning interface built with **Tailwind CSS 4** and **Framer Motion**, featuring glassmorphism and fluid micro-interactions.
-- **16+ Professional Tools**: Merge, Split, Compress, Convert (Word/Excel/JPG), OCR, Sign, Protect, and more.
-- **PWA Ready**: Installable as a native app on desktop and mobile.
-- **Open Source**: Built for the community, by the community.
+- **Traitement local** : les opérations PDF compatibles sont exécutées directement dans votre navigateur.
+- **Interface moderne** : une expérience responsive construite avec **Tailwind CSS 4** et **Framer Motion**.
+- **Suite complète d’outils** : fusion, division, compression, conversion, OCR, signature, protection et bien plus.
+- **Compatible PWA** : installation possible sur les appareils compatibles.
+- **Open source** : projet modifiable et extensible selon les termes de sa licence.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 <!-- TECH STACK -->
 
-## 🛠️ The Engine Room
+## 🛠️ Technologies
 
-We use the absolute latest web technologies to deliver native-like performance in the browser.
+Technologies utilisées pour fournir une expérience web moderne et réactive.
 
 - **[Next.js 16](https://nextjs.org/)**: The React Framework for the Web (App Router).
 - **[TypeScript](https://www.typescriptlang.org/)**: For type-safe, maintainable code.
@@ -70,35 +70,35 @@ We use the absolute latest web technologies to deliver native-like performance i
 
 <!-- GETTING STARTED -->
 
-## 🚀 Getting Started
+## 🚀 Installation
 
-To get a local copy up and running, follow these simple steps.
+Pour lancer HEXAOS PDF en local, suivez ces étapes.
 
-### Prerequisites
+### Prérequis
 
 - Node.js 18+ installed on your machine.
 
-### Installation
+### Installation locale
 
-1.  **Fork** the repository.
-2.  **Clone** your fork:
+1. **Forkez** le dépôt.
+2. **Clonez** votre fork :
     ```sh
-    git clone https://github.com/YOUR_USERNAME/HEXAOS PDF.git
-    cd HEXAOS PDF
+    git clone https://github.com/petagoria1-bot/SimplyPDF.git
+    cd SimplyPDF
     ```
-3.  **Install dependencies**:
+3. **Installez les dépendances** :
     ```sh
     npm install
     # or yarn install
     ```
-4.  **Set up Environment**:
+4. **Configurez l’environnement** :
     Rename `.env.example` to `.env.local` (or create one):
     ```sh
     NEXT_PUBLIC_BASE_URL=http://localhost:3000
     # Optional: Add Google Client ID for auth features
     NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_client_id
     ```
-5.  **Start Development Server**:
+5. **Lancez le serveur de développement** :
     ```sh
     npm run dev
     ```
@@ -109,13 +109,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing
+## 🤝 Contribuer
 
-**We simply love contributors!** ❤️
+**Les contributions sont les bienvenues !** ❤️
 
 HEXAOS PDF is an open-source project, and we want to make it the best PDF tool on the web. Whether you're fixing a bug, improving the docs, or adding a brand new tool, your help is welcome.
 
-### How to Contribute
+### Comment contribuer
 
 1.  Read our **[Contributing Guidelines](CONTRIBUTING.md)** (It's short, we promise!).
 2.  Check the **[Roadmap](ROADMAP.md)** to see what we're planning.
@@ -131,31 +131,31 @@ HEXAOS PDF is an open-source project, and we want to make it the best PDF tool o
 
 <!-- DOCUMENTATION -->
 
-## 📚 Documentation Index
+## 📚 Documentation
 
-Everything you need to know about the project structure and governance.
+Les principaux documents du projet sont disponibles dans le dépôt.
 
-- 📖 **[Contributing Guide](CONTRIBUTING.md)** - How to set up and contribute.
-- ⚖️ **[Code of Conduct](CODE_OF_CONDUCT.md)** - Our pledge for a healthy community.
-- 📝 **[Changelog](CHANGELOG.md)** - History of changes (We are at v3.0.0!).
-- 🗺️ **[Roadmap](ROADMAP.md)** - Future plans and vision.
-- 🛡️ **[Security Policy](SECURITY.md)** - Reporting vulnerabilities.
-- 🆘 **[Support](SUPPORT.md)** - Where to get help.
+- 📖 **[Contributing Guide](CONTRIBUTING.md)** - Installation et contribution au projet.
+- ⚖️ **[Code of Conduct](CODE_OF_CONDUCT.md)** - Règles de conduite du projet.
+- 📝 **[Changelog](CHANGELOG.md)** - Historique des modifications.
+- 🗺️ **[Roadmap](ROADMAP.md)** - Évolutions prévues du projet.
+- 🛡️ **[Security Policy](SECURITY.md)** - Signalement des vulnérabilités.
+- 🆘 **[Support](SUPPORT.md)** - Obtenir de l’aide.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ---
 
-## ☕ Support the Project
+## ☕ Soutenir le projet
 
 HEXAOS PDF est un projet libre et gratuit. Vos contributions et retours sont les bienvenus.
 
-## 📱 HEXAOS
+## 📱 Site HEXAOS
 
 urlSite HEXAOShttps://hexaos.fr
 
 ---
 
 <p align="center">
-  Built with ❤️ by <strong>HEXAOS</strong>
+  Créé avec ❤️ par <strong>HEXAOS</strong>
 </p>
