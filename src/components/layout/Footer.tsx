@@ -158,7 +158,7 @@ export default function Footer() {
             {/* Signature */}
             <div className="text-center">
               <p className="text-gray-500 text-sm tracking-wide">
-                Built with{" "}
+                Créé avec{" "}
                 <span className="text-rose-500 inline-block animate-pulse">
                   ❤️
                 </span>{" "}
