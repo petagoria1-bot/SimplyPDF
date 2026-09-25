@@ -14,7 +14,6 @@ import { downloadFile } from "@/lib/pdf-utils";
 import {
   AnimatedBackground,
   FloatingDecorations,
-  ToolHeader,
   ToolCard,
   ProcessingState,
 } from "../ui/ToolPageElements";
