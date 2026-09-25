@@ -211,11 +211,11 @@ export function ToolPageLayout({
                         stiffness: 400,
                         damping: 25,
                       }}
-                      className="mt-8 flex justify-center"
+                      className="mt-6 flex justify-center"
                     >
                       <motion.button
                         onClick={handleProcess}
-                        className="group btn-primary relative flex items-center gap-3 px-12 py-4 text-lg"
+                        className="group btn-primary relative flex items-center gap-3 px-8 py-3.5 text-base"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                       >
@@ -232,7 +232,7 @@ export function ToolPageLayout({
               {/* Features */}
               <motion.div
                 variants={itemVariants}
-                className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3"
+                className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3"
               >
                 {[
                   {
@@ -253,7 +253,7 @@ export function ToolPageLayout({
                 ].map((feature) => (
                   <motion.div
                     key={feature.label}
-                    className="group relative rounded-2xl border border-gray-100 bg-linear-to-b from-gray-50 to-white p-6 transition-all duration-500 hover:border-gray-200 hover:shadow-xl hover:shadow-gray-100/50"
+                    className="group relative rounded-2xl border border-gray-200/80 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100/30"
                     whileHover={{ y: -5 }}
                   >
                     <span className="mb-3 block text-2xl">{feature.icon}</span>
@@ -270,7 +270,7 @@ export function ToolPageLayout({
           {status === "processing" && (
             <ProcessingState
               title={processingText}
-              description="Cela ne prendra que quelques instants…"
+              description="Votre document est traité localement sur votre appareil."
             />
           )}
 
@@ -334,7 +334,7 @@ export function ToolPageLayout({
                   whileTap={{ scale: 0.97 }}
                 >
                   <Download className="h-5 w-5" />
-                  Download File
+                  Télécharger le document
                 </motion.button>
                 <motion.button
                   onClick={reset}
@@ -343,7 +343,7 @@ export function ToolPageLayout({
                   whileTap={{ scale: 0.97 }}
                 >
                   <RefreshCw className="h-5 w-5" />
-                  Process Another
+                  Traiter un autre document
                 </motion.button>
               </motion.div>
             </motion.div>
@@ -364,7 +364,7 @@ export function ToolPageLayout({
               >
                 <AlertCircle className="h-12 w-12" />
               </motion.div>
-              <h2 className="mb-3 text-3xl font-bold">Something went wrong</h2>
+              <h2 className="mb-3 text-3xl font-bold">Une erreur est survenue</h2>
               <p className="mb-10 text-lg text-gray-500">{errorMessage}</p>
 
               <motion.button
@@ -374,7 +374,7 @@ export function ToolPageLayout({
                 whileTap={{ scale: 0.97 }}
               >
                 <RefreshCw className="h-5 w-5" />
-                Try Again
+                Réessayer
               </motion.button>
             </motion.div>
           )}
