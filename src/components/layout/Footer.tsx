@@ -26,17 +26,7 @@ const company = [
 ];
 
 const socials = [
-  { icon: Twitter, href: "https://x.com/hexaos", label: "Twitter" },
-  {
-    icon: Github,
-    href: "https://github.com/petagoria1-bot/HEXAOS PDF",
-    label: "GitHub",
-  },
-  {
-    icon: Linkedin,
-    href: "https://www.linkedin.com/in/hexaos/",
-    label: "LinkedIn",
-  },
+  { icon: ArrowUpRight, href: "https://hexaos.fr", label: "HEXAOS" },
 ];
 
 export default function Footer() {
