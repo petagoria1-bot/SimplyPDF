@@ -29,19 +29,19 @@ export const FloatingShape = ({
 
 // Animated grid pattern with gradients
 export const AnimatedBackground = () => (
-  <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+  <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden opacity-70">
     <div className="grid-pattern absolute inset-0 opacity-40" />
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.4 }}
       transition={{ duration: 1 }}
-      className="absolute top-0 right-0 h-[500px] w-[500px] rounded-full bg-linear-to-bl from-cyan-50 to-transparent blur-3xl"
+      className="absolute top-0 right-0 h-[420px] w-[420px] rounded-full bg-linear-to-bl from-cyan-50/70 to-transparent blur-3xl"
     />
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 0.25 }}
       transition={{ duration: 1, delay: 0.3 }}
-      className="absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-linear-to-tr from-blue-50 to-transparent blur-3xl"
+      className="absolute bottom-0 left-0 h-[340px] w-[340px] rounded-full bg-linear-to-tr from-blue-50/60 to-transparent blur-3xl"
     />
     <motion.div
       initial={{ opacity: 0 }}
@@ -108,11 +108,11 @@ export function ToolHeader({ icon, title, description }: ToolHeaderProps) {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="mb-12 text-center"
+      className="mb-8 text-center"
     >
       {icon && (
         <motion.div
-          className="mb-6 inline-flex h-20 w-20 items-center justify-center rounded-3xl bg-linear-to-br from-cyan-50 to-blue-50 text-blue-600 shadow-lg shadow-blue-100/50"
+          className="mb-5 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-linear-to-br from-cyan-50 to-blue-50 text-blue-600 shadow-md shadow-blue-100/40"
           whileHover={{ scale: 1.1, rotate: 5 }}
           transition={{ type: "spring", stiffness: 400 }}
         >
@@ -127,7 +127,7 @@ export function ToolHeader({ icon, title, description }: ToolHeaderProps) {
               : (icon as React.ReactNode)}
         </motion.div>
       )}
-      <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
         {title}
       </h1>
       <p className="mx-auto max-w-xl text-lg leading-relaxed text-gray-500 md:text-xl">
@@ -151,8 +151,8 @@ export function ToolCard({ children, className = "" }: ToolCardProps) {
       transition={{ duration: 0.6, delay: 0.1 }}
       className={`relative ${className}`}
     >
-      <div className="absolute -inset-1 rounded-4xl bg-linear-to-r from-gray-200 via-gray-100 to-gray-200 opacity-50 blur-xl" />
-      <div className="relative rounded-3xl border border-blue-100/80 bg-white p-8 shadow-2xl shadow-blue-100/50 md:p-10">
+      <div className="absolute -inset-px rounded-[1.75rem] bg-gradient-to-br from-cyan-100/50 via-blue-100/20 to-transparent" />
+      <div className="relative rounded-[1.75rem] border border-gray-200/80 bg-white/95 p-5 shadow-[0_20px_55px_rgba(7,16,31,.08)] backdrop-blur md:p-7">
         {children}
       </div>
     </motion.div>
