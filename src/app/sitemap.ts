@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr";
+    process.env.NEXT_PUBLIC_BASE_URL || "https://hexaos.fr/pdf";
 
   // 1. Core Pages (Highest Priority due to navigation importance)
   const corePages = [
