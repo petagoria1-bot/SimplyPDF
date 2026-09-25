@@ -67,7 +67,7 @@ const SuccessParticles = () => {
             delay: i * 0.05,
             ease: "easeOut",
           }}
-          className="absolute top-1/2 left-1/2 h-2 w-2 rounded-full bg-black"
+          className="absolute top-1/2 left-1/2 h-2 w-2 rounded-full bg-[#07101f]"
         />
       ))}
     </div>
@@ -122,17 +122,17 @@ export function ToolPageLayout({
         if (historyAction) {
           const details =
             files.length === 1
-              ? "1 file processed"
-              : `${files.length} files processed`;
+              ? "1 fichier traité"
+              : `${files.length} fichiers traités`;
           addToHistory(historyAction, downloadFileName, details);
         }
       } else {
-        throw new Error("Processing failed");
+        throw new Error("Le traitement a échoué");
       }
     } catch (error) {
       console.error(error);
       setErrorMessage(
-        error instanceof Error ? error.message : "An error occurred"
+        error instanceof Error ? error.message : "Une erreur est survenue"
       );
       setStatus("error");
     }
@@ -237,18 +237,18 @@ export function ToolPageLayout({
                 {[
                   {
                     icon: "🔒",
-                    label: "100% Private",
-                    desc: "Files never leave your device",
+                    label: "100 % privé",
+                    desc: "Vos fichiers restent sur votre appareil",
                   },
                   {
                     icon: "⚡",
-                    label: "Lightning Fast",
-                    desc: "Instant local processing",
+                    label: "Ultra rapide",
+                    desc: "Traitement local instantané",
                   },
                   {
                     icon: "✨",
-                    label: "Completely Free",
-                    desc: "No hidden fees or limits",
+                    label: "Entièrement gratuit",
+                    desc: "Sans frais ni limites cachées",
                   },
                 ].map((feature) => (
                   <motion.div
@@ -270,7 +270,7 @@ export function ToolPageLayout({
           {status === "processing" && (
             <ProcessingState
               title={processingText}
-              description="This won't take long..."
+              description="Cela ne prendra que quelques instants…"
             />
           )}
 
@@ -290,7 +290,7 @@ export function ToolPageLayout({
                 transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
               >
                 <motion.div
-                  className="flex h-24 w-24 items-center justify-center rounded-full bg-black"
+                  className="flex h-24 w-24 items-center justify-center rounded-full bg-[#07101f]"
                   animate={{
                     boxShadow: [
                       "0 0 0 0 rgba(0,0,0,0.2)",
