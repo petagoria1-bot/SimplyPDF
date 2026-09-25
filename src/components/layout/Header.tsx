@@ -188,21 +188,21 @@ export default function Header() {
 
             <Link
               href="/merge-pdf"
-              className="underline-hover font-medium text-gray-700 transition-colors hover:text-black"
+              className="underline-hover font-medium text-gray-700 transition-colors hover:text-[#1268f4]"
             >
-              Merge
+              Fusionner
             </Link>
             <Link
               href="/split-pdf"
-              className="underline-hover font-medium text-gray-700 transition-colors hover:text-black"
+              className="underline-hover font-medium text-gray-700 transition-colors hover:text-[#1268f4]"
             >
-              Split
+              Diviser
             </Link>
             <Link
               href="/compress-pdf"
-              className="underline-hover font-medium text-gray-700 transition-colors hover:text-black"
+              className="underline-hover font-medium text-gray-700 transition-colors hover:text-[#1268f4]"
             >
-              Compress
+              Compresser
             </Link>
             <Link
               href="/about"
