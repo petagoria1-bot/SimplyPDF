@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "Reorder PDF Pages",
     "Delete PDF Pages",
     "Manage PDF Pages",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Organize PDF Pages | #1 Free PDF Management Tool",
     description:
       "The easiest way to organize your PDF documents. Fast, free, and secure.",
-    url: "https://simplypdf.vercel.app/organize-pdf",
+    url: "https://hexaos.fr/organize-pdf",
   },
 };
 
