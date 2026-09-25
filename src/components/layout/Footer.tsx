@@ -2,27 +2,27 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Github, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
+import { Github, ArrowUpRight } from "lucide-react";
 
 const product = [
-  { title: "Features", href: "/features" },
-  { title: "How It Works", href: "/how-it-works" },
+  { title: "Fonctionnalités", href: "/features" },
+  { title: "Comment ça marche", href: "/how-it-works" },
 ];
 
 const legal = [
-  { title: "Privacy Policy", href: "/privacy" },
-  { title: "Terms of Service", href: "/terms" },
-  { title: "Disclaimer", href: "/disclaimer" },
-  { title: "Cookie Policy", href: "/cookie-policy" },
+  { title: "Politique de confidentialité", href: "/privacy" },
+  { title: "Conditions d’utilisation", href: "/terms" },
+  { title: "Avertissement", href: "/disclaimer" },
+  { title: "Politique des cookies", href: "/cookie-policy" },
 ];
 
 const company = [
-  { title: "About Us", href: "/about" },
+  { title: "À propos", href: "/about" },
   { title: "Contact", href: "/contact" },
-  { title: "Support", href: "/support" },
+  { title: "Assistance", href: "/support" },
   { title: "FAQ", href: "/faq" },
-  { title: "Changelog", href: "/changelog" },
-  { title: "Sitemap", href: "/all-tools" },
+  { title: "Nouveautés", href: "/changelog" },
+  { title: "Tous les outils", href: "/all-tools" },
 ];
 
 const socials = [
@@ -39,22 +39,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <Link href="/" className="group mb-6 flex items-center gap-2">
-              <div className="relative h-10 w-10 transition-transform group-hover:scale-110 group-hover:rotate-3">
-                <Image
-                  src="/logo.png"
-                  alt="HEXAOS PDF Logo"
-                  fill
-                  className="rounded-xl bg-white object-contain"
-                />
+            <Link href="/" className="group mb-6 flex items-center gap-3">
+              <div className="relative h-10 w-40 transition-transform group-hover:scale-[1.02]">
+                <Image src="/hexaos-pdf-logo.svg" alt="HEXAOS PDF" fill className="object-contain object-left" />
               </div>
-              <span className="text-xl font-bold tracking-tight">
-                Simply<span className="text-gray-400">PDF</span>
-              </span>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-gray-400">
-              Free online PDF tools for everyone. Process files securely in your
-              browser — your files never leave your device.
+              Des outils PDF gratuits et modernes. Le traitement des documents s’effectue directement dans votre navigateur.
             </p>
 
             {/* Social Links */}
@@ -131,15 +122,15 @@ export default function Footer() {
 
             {/* Newsletter */}
             <div className="mt-8">
-              <h4 className="mb-3 text-sm font-semibold">Stay Updated</h4>
+              <h4 className="mb-3 text-sm font-semibold">Restez informé</h4>
               <div className="flex">
                 <input
                   type="email"
-                  placeholder="your@email.com"
+                  placeholder="votre@email.com"
                   className="flex-1 rounded-l-lg border border-white/10 bg-white/10 px-4 py-2.5 text-sm transition-colors focus:border-white/30 focus:outline-none"
                 />
                 <button className="rounded-r-lg bg-white px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-gray-200">
-                  Subscribe
+                  S’inscrire
                 </button>
               </div>
             </div>
@@ -153,9 +144,9 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-center gap-6 text-sm text-gray-400 md:flex-row md:gap-12">
             {/* Copyright & GitHub */}
             <div className="flex items-center gap-6">
-              <span>© {currentYear} HEXAOS PDF. All rights reserved.</span>
+              <span>© {currentYear} HEXAOS PDF. Tous droits réservés.</span>
               <a
-                href="https://github.com/petagoria1-bot/HEXAOS PDF"
+                href="https://github.com/petagoria1-bot/SimplyPDF"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-white"
@@ -180,7 +171,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 shadow-xs">
               <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
               <span className="font-medium text-xs md:text-sm">
-                Processing 100% locally in your browser
+                Traitement local dans votre navigateur
               </span>
             </div>
           </div>
