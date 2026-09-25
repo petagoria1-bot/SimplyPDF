@@ -9,13 +9,13 @@ export const metadata: Metadata = {
     "Rotate PDF",
     "Change PDF Orientation",
     "Free PDF Rotator",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "Rotate PDF Online | #1 Free PDF Rotation Tool",
     description:
       "Fix the orientation of your PDF files instantly. 100% private and secure.",
-    url: "https://simplypdf.vercel.app/rotate-pdf",
+    url: "https://hexaos.fr/rotate-pdf",
   },
 };
 
