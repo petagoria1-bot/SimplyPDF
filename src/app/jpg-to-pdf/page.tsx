@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "PNG to PDF",
     "Convert JPG to PDF",
     "Free Image Converter",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "JPG to PDF Converter | #1 Free Image to PDF Tool",
     description:
       "Convert your photos and images into PDFs instantly. No uploads, 100% private.",
-    url: "https://simplypdf.vercel.app/jpg-to-pdf",
+    url: "https://hexaos.fr/jpg-to-pdf",
   },
 };
 
