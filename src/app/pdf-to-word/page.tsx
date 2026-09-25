@@ -10,13 +10,13 @@ export const metadata: Metadata = {
     "PDF to DocX",
     "Convert PDF to Word",
     "Free Online Converter",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "PDF to Word Converter | #1 Free Conversion Tool",
     description:
       "Turn your PDFs into editable Word documents in seconds. High accuracy and private.",
-    url: "https://simplypdf.vercel.app/pdf-to-word",
+    url: "https://hexaos.fr/pdf-to-word",
   },
 };
 
