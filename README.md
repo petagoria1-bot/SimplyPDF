@@ -59,12 +59,12 @@ Le traitement des documents est conçu pour s’effectuer localement dans le nav
 
 Technologies utilisées pour fournir une expérience web moderne et réactive.
 
-- **[Next.js 16](https://nextjs.org/)**: The React Framework for the Web (App Router).
-- **[TypeScript](https://www.typescriptlang.org/)**: For type-safe, maintainable code.
-- **[Tailwind CSS 4](https://tailwindcss.com/)**: For a modern, high-performance design system.
-- **[Framer Motion](https://www.framer.com/motion/)**: For complex, butter-smooth animations.
-- **[WebAssembly (Wasm)](https://webassembly.org/)**: Powering heavy PDF operations via `qpdf` and `pdf-lib`.
-- **[Lucide React](https://lucide.dev/)**: Beautiful, consistent iconography.
+- **[Next.js 16](https://nextjs.org/)** : framework React pour le Web (App Router).
+- **[TypeScript](https://www.typescriptlang.org/)** : typage statique et code maintenable.
+- **[Tailwind CSS 4](https://tailwindcss.com/)** : système de design moderne et performant.
+- **[Framer Motion](https://www.framer.com/motion/)** : animations fluides.
+- **[WebAssembly (Wasm)](https://webassembly.org/)** : exécution de certaines opérations PDF dans le navigateur.
+- **[Lucide React](https://lucide.dev/)** : icônes cohérentes et accessibles.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
@@ -76,7 +76,7 @@ Pour lancer HEXAOS PDF en local, suivez ces étapes.
 
 ### Prérequis
 
-- Node.js 18+ installed on your machine.
+- Node.js 18+ installé sur votre machine.
 
 ### Installation locale
 
@@ -92,9 +92,10 @@ Pour lancer HEXAOS PDF en local, suivez ces étapes.
     # or yarn install
     ```
 4. **Configurez l’environnement** :
-    Rename `.env.example` to `.env.local` (or create one):
+    Renommez `.env.example` en `.env.local` (ou créez ce fichier) :
     ```sh
-    NEXT_PUBLIC_BASE_URL=http://localhost:3000
+    NEXT_PUBLIC_BASE_URL=http://localhost:3000/pdf
+    NEXT_PUBLIC_BASE_PATH=/pdf
     # Optional: Add Google Client ID for auth features
     NEXT_PUBLIC_GOOGLE_CLIENT_ID=your_client_id
     ```
@@ -103,7 +104,7 @@ Pour lancer HEXAOS PDF en local, suivez ces étapes.
     npm run dev
     ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Ouvrez [http://localhost:3000/pdf](http://localhost:3000/pdf) dans votre navigateur.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
@@ -113,19 +114,19 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 **Les contributions sont les bienvenues !** ❤️
 
-HEXAOS PDF is an open-source project, and we want to make it the best PDF tool on the web. Whether you're fixing a bug, improving the docs, or adding a brand new tool, your help is welcome.
+HEXAOS PDF est un projet open source. Les corrections, améliorations de documentation et nouvelles fonctionnalités sont les bienvenues.
 
 ### Comment contribuer
 
-1.  Read our **[Contributing Guidelines](CONTRIBUTING.md)** (It's short, we promise!).
-2.  Check the **[Roadmap](ROADMAP.md)** to see what we're planning.
-3.  Pick an issue or propose a new feature.
-4.  Fork the repo and create your branch (`git checkout -b feat/AmazingFeature`).
-5.  Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`).
+1.  Consultez notre **[guide de contribution](CONTRIBUTING.md)**.
+2.  Consultez la **[roadmap](ROADMAP.md)** pour connaître les évolutions prévues.
+3.  Choisissez une issue ou proposez une nouvelle fonctionnalité.
+4.  Forkez le dépôt et créez votre branche (`git checkout -b feat/MaFonctionnalite`).
+5.  Commitez vos modifications.
 6.  Push to the branch (`git push origin feat/AmazingFeature`).
-7.  Open a **Pull Request**.
+7.  Ouvrez une **Pull Request**.
 
-> **Note**: We treat documentation as a first-class citizen. If you see a typo or a way to improve the docs, please submit a PR!
+> **Note :** la documentation fait partie intégrante du projet. N’hésitez pas à corriger les erreurs ou à proposer des améliorations.
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
@@ -152,7 +153,7 @@ HEXAOS PDF est un projet libre et gratuit. Vos contributions et retours sont les
 
 ## 📱 Site HEXAOS
 
-urlSite HEXAOShttps://hexaos.fr
+[Site HEXAOS](https://hexaos.fr)
 
 ---
 
