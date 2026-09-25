@@ -4,22 +4,22 @@
 <br />
 <div align="center">
   <a href="https://hexaos.fr">
-    <img src="public/icon.png" alt="HEXAOS PDF Logo" width="100" height="100">
+    <img src="public/hexaos-pdf-icon-512.svg" alt="HEXAOS PDF Logo" width="100" height="100">
   </a>
 
   <h3 align="center">HEXAOS PDF</h3>
 
   <p align="center">
-    The Ultimate, Privacy-Focused PDF Swiss-Army Knife
+    Suite PDF gratuite, privée et performante
     <br />
-    <a href="https://hexaos.fr"><strong>Explore the docs »</strong></a>
+    <a href="https://hexaos.fr"><strong>Découvrir le projet »</strong></a>
     <br />
     <br />
-    <a href="https://hexaos.fr">View Demo</a>
+    <a href="https://hexaos.fr">Voir la démo</a>
     ·
-    <a href="https://github.com/petagoria1-bot/HEXAOS PDF/issues/new?template=bug_report.md">Report Bug</a>
+    <a href="https://github.com/petagoria1-bot/SimplyPDF/issues/new?template=bug_report.md">Signaler un bug</a>
     ·
-    <a href="https://github.com/petagoria1-bot/HEXAOS PDF/issues/new?template=feature_request.md">Request Feature</a>
+    <a href="https://github.com/petagoria1-bot/SimplyPDF/issues/new?template=feature_request.md">Proposer une fonctionnalité</a>
   </p>
 </div>
 
@@ -51,7 +51,7 @@ Unlike other tools that upload your data to remote servers, **HEXAOS PDF operate
 - **PWA Ready**: Installable as a native app on desktop and mobile.
 - **Open Source**: Built for the community, by the community.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 <!-- TECH STACK -->
 
@@ -66,7 +66,7 @@ We use the absolute latest web technologies to deliver native-like performance i
 - **[WebAssembly (Wasm)](https://webassembly.org/)**: Powering heavy PDF operations via `qpdf` and `pdf-lib`.
 - **[Lucide React](https://lucide.dev/)**: Beautiful, consistent iconography.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -105,7 +105,7 @@ To get a local copy up and running, follow these simple steps.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -127,7 +127,7 @@ HEXAOS PDF is an open-source project, and we want to make it the best PDF tool o
 
 > **Note**: We treat documentation as a first-class citizen. If you see a typo or a way to improve the docs, please submit a PR!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 <!-- DOCUMENTATION -->
 
@@ -142,34 +142,17 @@ Everything you need to know about the project structure and governance.
 - 🛡️ **[Security Policy](SECURITY.md)** - Reporting vulnerabilities.
 - 🆘 **[Support](SUPPORT.md)** - Where to get help.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
 ---
 
 ## ☕ Support the Project
 
-If you find this tool helpful and want to support its development, consider buying me a coffee! Your support helps keep the project alive and free.
+HEXAOS PDF est un projet libre et gratuit. Vos contributions et retours sont les bienvenus.
 
-<div align="center">
-    
-<a href="https://www.buymeacoffee.com/ArshVerma">
-  <img src="public/buy-me-a-coffee.png" width="200" />
-</a>
+## 📱 HEXAOS
 
-</div>
-
-## 📱 Connect with Me
-
-I'd love to hear your feedback or discuss potential collaborations!
-
-<div align="center">
-
-[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/petagoria1-bot)
-[![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/arshvermadev/)
-[![Twitter](https://skillicons.dev/icons?i=twitter)](https://x.com/TheArshVerma)
-[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:hexaos.fr)
-
-</div>
+urlSite HEXAOShttps://hexaos.fr
 
 ---
 
