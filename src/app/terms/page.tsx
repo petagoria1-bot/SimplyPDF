@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import TermsClient from "@/components/pages/legal/TermsClient";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | SimplyPDF",
+  title: "Terms of Service | HEXAOS PDF",
   description:
-    "Read the Terms of Service for using SimplyPDF's free online PDF tools.",
+    "Read the Terms of Service for using HEXAOS PDF's free online PDF tools.",
 };
 
 export default function TermsPage() {
