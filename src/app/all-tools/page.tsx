@@ -3,57 +3,57 @@ import Link from "next/link";
 import { ArrowLeft, Hammer, Info, Layout } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "All PDF Tools | SimplyPDF",
+  title: "Tous les outils PDF | HEXAOS PDF",
   description:
-    "A complete list of all the free online PDF tools and resources available on SimplyPDF.",
+    "La liste complète des outils PDF gratuits et des ressources disponibles sur HEXAOS PDF.",
 };
 
 const sections = [
   {
-    title: "Core Tools",
+    title: "Outils principaux",
     icon: Hammer,
     pages: [
-      { name: "Merge PDF", href: "/merge-pdf" },
-      { name: "Split PDF", href: "/split-pdf" },
-      { name: "Compress PDF", href: "/compress-pdf" },
-      { name: "Edit PDF", href: "/edit-pdf" },
-      { name: "PDF to Word", href: "/pdf-to-word" },
-      { name: "Word to PDF", href: "/word-to-pdf" },
-      { name: "JPG to PDF", href: "/jpg-to-pdf" },
-      { name: "PDF to JPG", href: "/pdf-to-jpg" },
+      { name: "Fusionner PDF", href: "/merge-pdf" },
+      { name: "Diviser PDF", href: "/split-pdf" },
+      { name: "Compresser PDF", href: "/compress-pdf" },
+      { name: "Modifier PDF", href: "/edit-pdf" },
+      { name: "PDF vers Word", href: "/pdf-to-word" },
+      { name: "Word vers PDF", href: "/word-to-pdf" },
+      { name: "JPG vers PDF", href: "/jpg-to-pdf" },
+      { name: "PDF vers JPG", href: "/pdf-to-jpg" },
       { name: "OCR PDF", href: "/ocr-pdf" },
-      { name: "Sign PDF", href: "/sign-pdf" },
-      { name: "Watermark PDF", href: "/watermark-pdf" },
-      { name: "Protect PDF", href: "/protect-pdf" },
-      { name: "Unlock PDF", href: "/unlock-pdf" },
-      { name: "Rotate PDF", href: "/rotate-pdf" },
-      { name: "Organize PDF", href: "/organize-pdf" },
-      { name: "PDF to Excel", href: "/pdf-to-excel" },
-      { name: "Repair PDF", href: "/repair-pdf" },
-      { name: "Edit Metadata", href: "/edit-metadata" },
+      { name: "Signer PDF", href: "/sign-pdf" },
+      { name: "Filigrane PDF", href: "/watermark-pdf" },
+      { name: "Protéger PDF", href: "/protect-pdf" },
+      { name: "Déverrouiller PDF", href: "/unlock-pdf" },
+      { name: "Faire pivoter PDF", href: "/rotate-pdf" },
+      { name: "Organiser PDF", href: "/organize-pdf" },
+      { name: "PDF vers Excel", href: "/pdf-to-excel" },
+      { name: "Réparer PDF", href: "/repair-pdf" },
+      { name: "Modifier les métadonnées", href: "/edit-metadata" },
     ],
   },
   {
-    title: "Resources",
+    title: "Ressources",
     icon: Info,
     pages: [
-      { name: "How It Works", href: "/how-it-works" },
-      { name: "Features", href: "/features" },
+      { name: "Comment ça marche", href: "/how-it-works" },
+      { name: "Fonctionnalités", href: "/features" },
       { name: "FAQ", href: "/faq" },
-      { name: "Changelog", href: "/changelog" },
-      { name: "Support", href: "/support" },
-      { name: "About Us", href: "/about" },
+      { name: "Journal des modifications", href: "/changelog" },
+      { name: "Assistance", href: "/support" },
+      { name: "À propos", href: "/about" },
       { name: "Contact", href: "/contact" },
     ],
   },
   {
-    title: "Legal",
+    title: "Informations légales",
     icon: Layout,
     pages: [
-      { name: "Privacy Policy", href: "/privacy" },
-      { name: "Terms of Service", href: "/terms" },
-      { name: "Disclaimer", href: "/disclaimer" },
-      { name: "Cookie Policy", href: "/cookie-policy" },
+      { name: "Politique de confidentialité", href: "/privacy" },
+      { name: "Conditions d’utilisation", href: "/terms" },
+      { name: "Mentions et avertissement", href: "/disclaimer" },
+      { name: "Politique des cookies", href: "/cookie-policy" },
     ],
   },
 ];
@@ -67,16 +67,16 @@ export default function SitemapPage() {
           className="group mb-8 inline-flex items-center gap-2 text-sm text-gray-500 transition-colors hover:text-black"
         >
           <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
-          Back to Home
+          Retour à l’accueil
         </Link>
 
         <div className="mb-12">
           <h1 className="mb-4 text-4xl font-black tracking-tight">
-            All PDF Tools
+            Tous les outils PDF
           </h1>
           <p className="text-lg font-medium text-gray-500">
-            Every tool, feature, and legal document on{" "}
-            <span className="text-black">SimplyPDF</span> — all in one place.
+            Tous les outils, fonctionnalités et documents légaux de{" "}
+            <span className="text-black">HEXAOS PDF</span> — all in one place.
           </p>
         </div>
 
