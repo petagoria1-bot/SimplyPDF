@@ -26,15 +26,15 @@ const company = [
 ];
 
 const socials = [
-  { icon: Twitter, href: "https://x.com/TheArshVerma", label: "Twitter" },
+  { icon: Twitter, href: "https://x.com/hexaos", label: "Twitter" },
   {
     icon: Github,
-    href: "https://github.com/ArshVermaGit/SimplyPDF",
+    href: "https://github.com/petagoria1-bot/HEXAOS PDF",
     label: "GitHub",
   },
   {
     icon: Linkedin,
-    href: "https://www.linkedin.com/in/arshvermadev/",
+    href: "https://www.linkedin.com/in/hexaos/",
     label: "LinkedIn",
   },
 ];
@@ -53,7 +53,7 @@ export default function Footer() {
               <div className="relative h-10 w-10 transition-transform group-hover:scale-110 group-hover:rotate-3">
                 <Image
                   src="/logo.png"
-                  alt="SimplyPDF Logo"
+                  alt="HEXAOS PDF Logo"
                   fill
                   className="rounded-xl bg-white object-contain"
                 />
@@ -163,9 +163,9 @@ export default function Footer() {
           <div className="flex flex-col items-center justify-center gap-6 text-sm text-gray-400 md:flex-row md:gap-12">
             {/* Copyright & GitHub */}
             <div className="flex items-center gap-6">
-              <span>© {currentYear} SimplyPDF. All rights reserved.</span>
+              <span>© {currentYear} HEXAOS PDF. All rights reserved.</span>
               <a
-                href="https://github.com/ArshVermaGit/SimplyPDF"
+                href="https://github.com/petagoria1-bot/HEXAOS PDF"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-white"
@@ -182,7 +182,7 @@ export default function Footer() {
                   ❤️
                 </span>{" "}
                 by{" "}
-                <span className="font-black text-white ml-1">Arsh Verma</span>
+                <span className="font-black text-white ml-1">HEXAOS</span>
               </p>
             </div>
 
