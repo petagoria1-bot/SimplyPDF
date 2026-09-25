@@ -11,13 +11,13 @@ export const metadata: Metadata = {
     "Free PDF Editor",
     "Annotate PDF",
     "PDF Signer",
-    "SimplyPDF",
+    "HEXAOS PDF",
   ],
   openGraph: {
     title: "PDF Editor Online | #1 Free PDF Editing Tool",
     description:
       "Professional PDF editing made simple. Edit your documents for free and securely.",
-    url: "https://simplypdf.vercel.app/edit-pdf",
+    url: "https://hexaos.fr/edit-pdf",
   },
 };
 
