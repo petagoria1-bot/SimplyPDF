@@ -16,9 +16,9 @@ export const Features = () => {
 
       <div className="relative z-10 container mx-auto px-4">
         <div className="scroll-reveal mb-16 text-center">
-          <h2 className="section-title mb-4 text-white">Why SimplyPDF?</h2>
+          <h2 className="section-title mb-4 text-white">Pourquoi HEXAOS PDF ?</h2>
           <p className="section-subtitle mx-auto text-gray-400">
-            Built for speed, privacy, and simplicity.
+            Conçu pour la rapidité, la confidentialité et la simplicité.
           </p>
         </div>
 
@@ -40,10 +40,10 @@ export const Features = () => {
         {/* Trust Badges */}
         <div className="scroll-reveal mt-20 flex flex-wrap justify-center gap-6">
           {[
-            "No signup required",
-            "Works offline",
-            "No file limits",
-            "Forever free",
+            "Aucune inscription requise",
+            "Fonctionne hors ligne",
+            "Aucune limite de fichiers",
+            "Gratuit",
           ].map((badge) => (
             <div
               key={badge}
