@@ -55,9 +55,9 @@ export const metadata: Metadata = {
     "No upload PDF tool",
   ],
   icons: {
-    icon: "/hexaos-pdf-icon.svg",
-    shortcut: "/hexaos-pdf-icon.svg",
-    apple: "/hexaos-pdf-icon.svg",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/hexaos-pdf-icon-512.svg",
   },
   openGraph: {
     title: "HEXAOS PDF | The Easiest & Most Secure PDF Tool",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: "HEXAOS PDF | #1 Free Online PDF Tools",
     description:
       "Premium PDF editing and management, 100% private and secure. No uploads, no limits.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
   },
   other: {
     "google-adsense-account":
