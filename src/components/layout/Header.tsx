@@ -50,20 +50,20 @@ const tools = [
   { title: "Pivoter", icon: RotateCw, href: "/rotate-pdf" },
   { title: "Dupliquer", icon: Copy, href: "/duplicate-pages" },
   { title: "Insérer", icon: PlusCircle, href: "/insert-pages" },
-  { title: "JPG to PDF", icon: ImagePlus, href: "/jpg-to-pdf" },
-  { title: "PDF to JPG", icon: FileImage, href: "/pdf-to-jpg" },
-  { title: "Word to PDF", icon: FileUp, href: "/word-to-pdf" },
-  { title: "PDF to Word", icon: FileText, href: "/pdf-to-word" },
-  { title: "Excel to PDF", icon: TableIcon, href: "/excel-to-pdf" },
-  { title: "PDF to Excel", icon: FileDown, href: "/pdf-to-excel" },
-  { title: "PPT to PDF", icon: Presentation, href: "/powerpoint-to-pdf" },
-  { title: "PDF to PPT", icon: Presentation, href: "/pdf-to-powerpoint" },
-  { title: "Web to PDF", icon: Globe, href: "/html-to-pdf" },
-  { title: "PDF to HTML", icon: Globe, href: "/pdf-to-html" },
-  { title: "Text to PDF", icon: FileText, href: "/text-to-pdf" },
-  { title: "PDF to Text", icon: FileText, href: "/pdf-to-text" },
-  { title: "EPUB to PDF", icon: BookOpen, href: "/epub-to-pdf" },
-  { title: "PDF to EPUB", icon: BookOpen, href: "/pdf-to-epub" },
+  { title: "JPG → PDF", icon: ImagePlus, href: "/jpg-to-pdf" },
+  { title: "PDF → JPG", icon: FileImage, href: "/pdf-to-jpg" },
+  { title: "Word → PDF", icon: FileUp, href: "/word-to-pdf" },
+  { title: "PDF → Word", icon: FileText, href: "/pdf-to-word" },
+  { title: "Excel → PDF", icon: TableIcon, href: "/excel-to-pdf" },
+  { title: "PDF → Excel", icon: FileDown, href: "/pdf-to-excel" },
+  { title: "PPT → PDF", icon: Presentation, href: "/powerpoint-to-pdf" },
+  { title: "PDF → PPT", icon: Presentation, href: "/pdf-to-powerpoint" },
+  { title: "Web → PDF", icon: Globe, href: "/html-to-pdf" },
+  { title: "PDF → HTML", icon: Globe, href: "/pdf-to-html" },
+  { title: "Texte → PDF", icon: FileText, href: "/text-to-pdf" },
+  { title: "PDF → Texte", icon: FileText, href: "/pdf-to-text" },
+  { title: "EPUB → PDF", icon: BookOpen, href: "/epub-to-pdf" },
+  { title: "PDF → EPUB", icon: BookOpen, href: "/pdf-to-epub" },
   { title: "Déverrouiller", icon: Unlock, href: "/unlock-pdf" },
   { title: "Protéger", icon: Lock, href: "/protect-pdf" },
   { title: "Organiser", icon: Layers, href: "/organize-pdf" },
@@ -149,7 +149,7 @@ export default function Header() {
               onMouseEnter={() => setShowTools(true)}
               onMouseLeave={() => setShowTools(false)}
             >
-              <button className="underline-hover flex items-center gap-1 py-2 font-medium text-gray-700 transition-colors hover:text-black">
+              <button className="underline-hover flex items-center gap-1 py-2 font-medium text-gray-700 transition-colors hover:text-[#1268f4]">
                 Tous les outils
                 <ChevronDown
                   className={`h-4 w-4 transition-transform ${showTools ? "rotate-180" : ""}`}
@@ -297,7 +297,7 @@ export default function Header() {
               // Not logged in - Google Se connecter button
               <button
                 onClick={() => setShowSignInModal(true)}
-                className="group flex items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white shadow-md transition-all hover:scale-105 active:scale-95"
+                className="group flex items-center gap-2 rounded-full bg-[#1268f4] px-5 py-2.5 text-sm font-medium text-white shadow-md transition-all hover:scale-105 active:scale-95"
               >
                 <LogIn className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                 Se connecter
@@ -385,7 +385,7 @@ export default function Header() {
                       setIsMenuOpen(false);
                       setShowSignInModal(true);
                     }}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-black py-3 font-medium text-white shadow-sm transition-colors hover:bg-gray-800"
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-black py-3 font-medium text-white shadow-sm transition-colors hover:bg-[#0d56c9]"
                   >
                     <LogIn className="h-5 w-5" />
                     Se connecter avec Google
