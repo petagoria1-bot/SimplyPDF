@@ -19,7 +19,7 @@ export function Loader({ size = "md", className = "", text }: LoaderProps) {
   return (
     <div className={`flex flex-col items-center justify-center gap-6 ${className}`}>
       <div
-        className={`${sizes[size]} animate-spin rounded-full border-gray-200 border-t-black`}
+        className={`${sizes[size]} animate-spin rounded-full border-gray-200 border-t-[#1268f4]`}
       />
 
       {text && (
@@ -43,7 +43,7 @@ export function LoadingOverlay({ text }: { text?: string }) {
       {/* Minimalist Background Gradients */}
       <div className="absolute top-1/2 left-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gray-50 opacity-50 blur-[120px]" />
 
-      <Loader size="xl" text={text || "Processing Document"} />
+      <Loader size="xl" text={text || "Traitement du document…"} />
     </div>
   );
 }
