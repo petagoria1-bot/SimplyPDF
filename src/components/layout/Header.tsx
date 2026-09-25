@@ -41,15 +41,15 @@ import {
 } from "lucide-react";
 
 const tools = [
-  { title: "Merge", icon: Merge, href: "/merge-pdf" },
-  { title: "Split", icon: Split, href: "/split-pdf" },
-  { title: "Compress", icon: Minimize2, href: "/compress-pdf" },
-  { title: "Extract", icon: Scissors, href: "/extract-pages" },
-  { title: "Delete", icon: Trash2, href: "/delete-pages" },
-  { title: "Reorder", icon: GripVertical, href: "/reorder-pages" },
-  { title: "Rotate", icon: RotateCw, href: "/rotate-pdf" },
-  { title: "Duplicate", icon: Copy, href: "/duplicate-pages" },
-  { title: "Insert", icon: PlusCircle, href: "/insert-pages" },
+  { title: "Fusionner", icon: Merge, href: "/merge-pdf" },
+  { title: "Diviser", icon: Split, href: "/split-pdf" },
+  { title: "Compresser", icon: Minimize2, href: "/compress-pdf" },
+  { title: "Extraire", icon: Scissors, href: "/extract-pages" },
+  { title: "Supprimer", icon: Trash2, href: "/delete-pages" },
+  { title: "Réorganiser", icon: GripVertical, href: "/reorder-pages" },
+  { title: "Pivoter", icon: RotateCw, href: "/rotate-pdf" },
+  { title: "Dupliquer", icon: Copy, href: "/duplicate-pages" },
+  { title: "Insérer", icon: PlusCircle, href: "/insert-pages" },
   { title: "JPG to PDF", icon: ImagePlus, href: "/jpg-to-pdf" },
   { title: "PDF to JPG", icon: FileImage, href: "/pdf-to-jpg" },
   { title: "Word to PDF", icon: FileUp, href: "/word-to-pdf" },
@@ -64,15 +64,15 @@ const tools = [
   { title: "PDF to Text", icon: FileText, href: "/pdf-to-text" },
   { title: "EPUB to PDF", icon: BookOpen, href: "/epub-to-pdf" },
   { title: "PDF to EPUB", icon: BookOpen, href: "/pdf-to-epub" },
-  { title: "Unlock", icon: Unlock, href: "/unlock-pdf" },
-  { title: "Protect", icon: Lock, href: "/protect-pdf" },
-  { title: "Organize", icon: Layers, href: "/organize-pdf" },
-  { title: "Watermark", icon: Stamp, href: "/watermark-pdf" },
-  { title: "Sign", icon: FileSignature, href: "/sign-pdf" },
-  { title: "Edit", icon: Type, href: "/edit-pdf" },
+  { title: "Déverrouiller", icon: Unlock, href: "/unlock-pdf" },
+  { title: "Protéger", icon: Lock, href: "/protect-pdf" },
+  { title: "Organiser", icon: Layers, href: "/organize-pdf" },
+  { title: "Filigrane", icon: Stamp, href: "/watermark-pdf" },
+  { title: "Signer", icon: FileSignature, href: "/sign-pdf" },
+  { title: "Modifier", icon: Type, href: "/edit-pdf" },
   { title: "OCR", icon: ScanLine, href: "/ocr-pdf" },
-  { title: "Repair", icon: Wrench, href: "/repair-pdf" },
-  { title: "Metadata", icon: FileText, href: "/edit-metadata" },
+  { title: "Réparer", icon: Wrench, href: "/repair-pdf" },
+  { title: "Métadonnées", icon: FileText, href: "/edit-metadata" },
 ];
 
 export default function Header() {
@@ -172,7 +172,7 @@ export default function Header() {
                           href={tool.href}
                           className="group flex items-center gap-3 rounded-xl p-3 transition-colors hover:bg-gray-50"
                         >
-                          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 transition-all group-hover:bg-black group-hover:text-white">
+                          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 transition-all group-hover:bg-[#1268f4] group-hover:text-white">
                             <tool.icon className="h-5 w-5" />
                           </div>
                           <span className="text-sm font-medium">
