@@ -3,23 +3,23 @@
 <!-- HEADER -->
 <br />
 <div align="center">
-  <a href="https://simplypdf.vercel.app">
-    <img src="public/icon.png" alt="SimplyPDF Logo" width="100" height="100">
+  <a href="https://hexaos.fr">
+    <img src="public/icon.png" alt="HEXAOS PDF Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">SimplyPDF</h3>
+  <h3 align="center">HEXAOS PDF</h3>
 
   <p align="center">
     The Ultimate, Privacy-Focused PDF Swiss-Army Knife
     <br />
-    <a href="https://simplypdf.vercel.app"><strong>Explore the docs »</strong></a>
+    <a href="https://hexaos.fr"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://simplypdf.vercel.app">View Demo</a>
+    <a href="https://hexaos.fr">View Demo</a>
     ·
-    <a href="https://github.com/ArshVermaGit/SimplyPDF/issues/new?template=bug_report.md">Report Bug</a>
+    <a href="https://github.com/petagoria1-bot/HEXAOS PDF/issues/new?template=bug_report.md">Report Bug</a>
     ·
-    <a href="https://github.com/ArshVermaGit/SimplyPDF/issues/new?template=feature_request.md">Request Feature</a>
+    <a href="https://github.com/petagoria1-bot/HEXAOS PDF/issues/new?template=feature_request.md">Request Feature</a>
   </p>
 </div>
 
@@ -39,9 +39,9 @@
 
 ## ✨ About The Project
 
-**SimplyPDF** is a premium, high-performance web application designed to redefine how you interact with PDFs. Built with a hyper-polished, responsive aesthetic, it offers a seamless, desktop-class experience for editing, converting, and managing documents directly in your browser.
+**HEXAOS PDF** is a premium, high-performance web application designed to redefine how you interact with PDFs. Built with a hyper-polished, responsive aesthetic, it offers a seamless, desktop-class experience for editing, converting, and managing documents directly in your browser.
 
-Unlike other tools that upload your data to remote servers, **SimplyPDF operates entirely client-side**. Your sensitive documents never leave your device, ensuring maximum privacy and security without compromising on power or features.
+Unlike other tools that upload your data to remote servers, **HEXAOS PDF operates entirely client-side**. Your sensitive documents never leave your device, ensuring maximum privacy and security without compromising on power or features.
 
 ### 💎 Key Features
 
@@ -83,8 +83,8 @@ To get a local copy up and running, follow these simple steps.
 1.  **Fork** the repository.
 2.  **Clone** your fork:
     ```sh
-    git clone https://github.com/YOUR_USERNAME/SimplyPDF.git
-    cd SimplyPDF
+    git clone https://github.com/YOUR_USERNAME/HEXAOS PDF.git
+    cd HEXAOS PDF
     ```
 3.  **Install dependencies**:
     ```sh
@@ -113,7 +113,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 **We simply love contributors!** ❤️
 
-SimplyPDF is an open-source project, and we want to make it the best PDF tool on the web. Whether you're fixing a bug, improving the docs, or adding a brand new tool, your help is welcome.
+HEXAOS PDF is an open-source project, and we want to make it the best PDF tool on the web. Whether you're fixing a bug, improving the docs, or adding a brand new tool, your help is welcome.
 
 ### How to Contribute
 
@@ -164,15 +164,15 @@ I'd love to hear your feedback or discuss potential collaborations!
 
 <div align="center">
 
-[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/ArshVermaGit)
+[![GitHub](https://skillicons.dev/icons?i=github)](https://github.com/petagoria1-bot)
 [![LinkedIn](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/in/arshvermadev/)
 [![Twitter](https://skillicons.dev/icons?i=twitter)](https://x.com/TheArshVerma)
-[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:arshverma.dev@gmail.com)
+[![Gmail](https://skillicons.dev/icons?i=gmail)](mailto:hexaos.fr)
 
 </div>
 
 ---
 
 <p align="center">
-  Built with ❤️ by <strong>Arsh Verma</strong>
+  Built with ❤️ by <strong>HEXAOS</strong>
 </p>
