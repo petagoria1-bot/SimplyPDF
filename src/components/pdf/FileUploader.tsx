@@ -75,7 +75,7 @@ export function FileUploader({
               className="group flex cursor-grab items-center gap-3 rounded-xl bg-gray-50 p-4 transition-colors hover:bg-gray-100 active:cursor-grabbing"
             >
               <GripVertical className="h-4 w-4 text-gray-400" />
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black text-white">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#07101f] text-white">
                 <File className="h-5 w-5" />
               </div>
               <div className="min-w-0 flex-1">
@@ -105,7 +105,7 @@ export function FileUploader({
             animate={{ opacity: 1, y: 0 }}
             className="group flex items-center gap-3 rounded-xl bg-gray-50 p-4 transition-colors hover:bg-gray-100"
           >
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black text-white">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#07101f] text-white">
               <File className="h-5 w-5" />
             </div>
             <div className="min-w-0 flex-1">
@@ -143,16 +143,16 @@ export function FileUploader({
           htmlFor="file-upload"
           onDragOver={(e) => e.preventDefault()}
           onDrop={handleDrop}
-          className="group flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-200 p-12 transition-all duration-300 hover:border-black hover:bg-gray-50"
+          className="group flex cursor-pointer flex-col items-center justify-center rounded-2xl border-2 border-dashed border-gray-200 p-12 transition-all duration-300 hover:border-[#1268f4] hover:bg-[#1268f4]/5"
         >
-          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-100 transition-all group-hover:bg-black group-hover:text-white">
+          <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gray-100 transition-all group-hover:bg-[#1268f4] group-hover:text-white">
             <Upload className="h-8 w-8" />
           </div>
           <p className="mb-2 text-lg font-semibold">
             Drop files here or click to upload
           </p>
           <p className="text-sm text-gray-400">
-            {multiple ? "Select one or more files" : "Select a file"}
+            {multiple ? "Sélectionnez un ou plusieurs fichiers" : "Sélectionnez un fichier"}
           </p>
         </label>
       ) : (
@@ -162,7 +162,7 @@ export function FileUploader({
           {multiple && (
             <label
               htmlFor="file-upload"
-              className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border-2 border-dashed border-gray-200 p-4 text-gray-500 transition-all hover:border-black hover:bg-gray-50 hover:text-black"
+              className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border-2 border-dashed border-gray-200 p-4 text-gray-500 transition-all hover:border-[#1268f4] hover:bg-[#1268f4]/5 hover:text-black"
             >
               <Plus className="h-5 w-5" />
               Add more files
